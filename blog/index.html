@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - AesteticAdvice</title>
+    <meta name="description" content="Expert articles on aesthetic treatments, skincare, hair loss, and beauty wellness.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            color: #1f2937;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #111827;
+        }
+
+        .page-header p {
+            font-size: 1.1rem;
+            color: #6b7280;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .blog-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1.5rem;
+            background: #fafbfc;
+            transition: all 0.3s ease;
+        }
+
+        .blog-card:hover {
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.1);
+            border-color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .blog-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: #111827;
+        }
+
+        .blog-card h3 a {
+            color: #111827;
+            text-decoration: none;
+        }
+
+        .blog-card h3 a:hover {
+            color: #2563eb;
+        }
+
+        .blog-card .meta {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            margin-bottom: 1rem;
+        }
+
+        .blog-card p {
+            color: #6b7280;
+            margin-bottom: 1rem;
+        }
+
+        .read-more {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #f3f4f6;
+            border-top: 1px solid #e5e7eb;
+            margin-top: 3rem;
+            padding: 2rem 1.5rem;
+            color: #6b7280;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-disclaimer {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #d1d5db;
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="site-brand">AesteticAdvice</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/#categories">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>AesteticAdvice Blog</h1>
+            <p>Expert insights on aesthetic treatments, skincare, and beauty wellness</p>
+        </div>
+
+        <div class="blog-grid">
+
+            <div class="blog-card">
+                <h3><a href="/blog/hims-vs-keeps-hair-loss/">Hims vs Keeps: Which Hair Loss Treatment Actually Works in 2026?</a></h3>
+                <p class="meta">Published: 2026-03-05 • 8 min read</p>
+                <p>Detailed comparison of Hims and Keeps for hair loss treatment. See pricing, active ingredients, subscription flexibility, and real results.</p>
+                <a href="/blog/hims-vs-keeps-hair-loss/" class="read-more">Read Article →</a>
+            </div>
+
+            <div class="blog-card">
+                <h3><a href="/blog/best-ipl-devices-dark-skin/">Best IPL Devices for Dark Skin Tones in 2026 (What Actually Works)</a></h3>
+                <p class="meta">Published: 2026-03-04 • 9 min read</p>
+                <p>Safe IPL devices for dark skin. Most IPL devices don't work on dark skin—here's what actually does and why.</p>
+                <a href="/blog/best-ipl-devices-dark-skin/" class="read-more">Read Article →</a>
+            </div>
+
+            <div class="blog-card">
+                <h3><a href="/blog/curology-vs-hers-skincare/">Curology vs Hers Skincare: Which Prescription Service Is Worth It?</a></h3>
+                <p class="meta">Published: 2026-03-03 • 8 min read</p>
+                <p>Curology vs Hers comparison. Pricing, ingredients, consultation process, and which is better for acne, aging, and hyperpigmentation.</p>
+                <a href="/blog/curology-vs-hers-skincare/" class="read-more">Read Article →</a>
+            </div>
+
+            <div class="blog-card">
+                <h3><a href="/blog/how-many-ipl-sessions/">How Many IPL Sessions Does It Actually Take? (Honest Timeline)</a></h3>
+                <p class="meta">Published: 2026-03-02 • 8 min read</p>
+                <p>Real IPL results timeline. Most people expect 2-3 sessions but need 6-12. Here's what to actually expect by body area and skin type.</p>
+                <a href="/blog/how-many-ipl-sessions/" class="read-more">Read Article →</a>
+            </div>
+
+            <div class="blog-card">
+                <h3><a href="/blog/at-home-microneedling-safe/">At-Home Microneedling: Is It Actually Safe? What You Need to Know</a></h3>
+                <p class="meta">Published: 2026-03-01 • 8 min read</p>
+                <p>Is at-home microneedling safe? Yes—if done correctly. Needle depth, sterilization, frequency, and what to avoid.</p>
+                <a href="/blog/at-home-microneedling-safe/" class="read-more">Read Article →</a>
+            </div>
+
+            <div class="blog-card">
+                <h3><a href="/blog/led-light-therapy-masks-work/">Do LED Light Therapy Masks Actually Work? The Science Explained</a></h3>
+                <p class="meta">Published: 2026-02-28 • 9 min read</p>
+                <p>LED light therapy is scientifically proven. Red light builds collagen, blue light kills acne bacteria. We break down what works and what doesn't.</p>
+                <a href="/blog/led-light-therapy-masks-work/" class="read-more">Read Article →</a>
+            </div>
+
+            <div class="blog-card">
+                <h3><a href="/blog/best-teeth-whitening-sensitive/">Best Teeth Whitening for Sensitive Teeth in 2026 (That Actually Works)</a></h3>
+                <p class="meta">Published: 2026-02-27 • 8 min read</p>
+                <p>Teeth whitening formulas designed for sensitive teeth. Lower peroxide concentrations, potassium nitrate, and which brands actually work without pain.</p>
+                <a href="/blog/best-teeth-whitening-sensitive/" class="read-more">Read Article →</a>
+            </div>
+
+            <div class="blog-card">
+                <h3><a href="/blog/hims-vs-hers-comparison/">Hims vs Hers: Same Company, Different Products — Which Is Right for You?</a></h3>
+                <p class="meta">Published: 2026-02-26 • 8 min read</p>
+                <p>Hims and Hers are sister companies under the same parent. But they serve different markets. Here's how they compare.</p>
+                <a href="/blog/hims-vs-hers-comparison/" class="read-more">Read Article →</a>
+            </div>
+
+            <div class="blog-card">
+                <h3><a href="/blog/find-good-med-spa/">How to Find a Good Med Spa Near You (And 5 Red Flags to Avoid)</a></h3>
+                <p class="meta">Published: 2026-02-25 • 8 min read</p>
+                <p>What makes a legitimate med spa vs a dangerous one. Licensed medical directors, injector credentials, and how to spot red flags.</p>
+                <a href="/blog/find-good-med-spa/" class="read-more">Read Article →</a>
+            </div>
+
+            <div class="blog-card">
+                <h3><a href="/blog/snow-vs-crest-whitestrips/">Snow Teeth Whitening vs Crest Whitestrips: Which Is Actually Worth It?</a></h3>
+                <p class="meta">Published: 2026-02-24 • 8 min read</p>
+                <p>Snow is premium ($149) with an LED accelerator. Crest is cheap ($40) with decades of proof. Which one actually whitens your teeth?</p>
+                <a href="/blog/snow-vs-crest-whitestrips/" class="read-more">Read Article →</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 AesteticAdvice. All rights reserved.</p>
+            <div class="footer-disclaimer">
+                <strong>Affiliate Disclaimer:</strong> As an Amazon Associate and affiliate partner, we earn from qualifying purchases.
+                We test and review products independently. Our opinions are our own. Always consult a healthcare provider
+                before trying any new medical device or treatment.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
