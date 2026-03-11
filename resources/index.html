@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources & Tools Hub | AesteticAdvice</title>
+  <meta name="description" content="Free resources, calculators, guides, and tools for at-home aesthetic treatments. Skin tone checker, IPL eligibility, treatment timelines, and more.">
+  <link rel="canonical" href="https://aesteticadvice.com/resources/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Resources & Tools Hub",
+    "description": "Free resources, calculators, and guides for at-home aesthetic treatments.",
+    "url": "https://aesteticadvice.com/resources/",
+    "publisher": {"@type": "Organization", "name": "AesteticAdvice", "url": "https://aesteticadvice.com"}
+  }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1f2937; background: #fff; line-height: 1.6; }
+    header { background: #fff; border-bottom: 1px solid #e5e7eb; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    nav { max-width: 1200px; margin: 0 auto; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+    .site-brand { font-size: 1.5rem; font-weight: 700; color: #2563eb; text-decoration: none; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { text-decoration: none; color: #4b5563; font-weight: 500; }
+    .nav-links a:hover { color: #2563eb; }
+    main { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem 5rem; }
+    .page-header { text-align: center; margin-bottom: 3rem; }
+    .page-header h1 { font-size: 2.2rem; font-weight: 800; color: #111827; margin-bottom: 0.75rem; }
+    .page-header p { font-size: 1.05rem; color: #6b7280; max-width: 600px; margin: 0 auto; }
+    .section-title { font-size: 1.3rem; font-weight: 800; color: #111827; margin: 2.5rem 0 1.25rem; padding-bottom: 0.5rem; border-bottom: 2px solid #f3f4f6; }
+    .resource-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem; margin-bottom: 1rem; }
+    .resource-card { border: 1.5px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; background: #fff; transition: all 0.2s; }
+    .resource-card:hover { border-color: #2563eb; box-shadow: 0 4px 16px rgba(37,99,235,0.08); transform: translateY(-2px); }
+    .resource-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .resource-card h3 { font-size: 1rem; font-weight: 700; color: #111827; margin-bottom: 0.4rem; }
+    .resource-card p { font-size: 0.85rem; color: #6b7280; margin-bottom: 1rem; line-height: 1.5; }
+    .resource-tag { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 10px; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    .tag-free { background: #dcfce7; color: #15803d; }
+    .tag-guide { background: #dbeafe; color: #1d4ed8; }
+    .tag-tool { background: #fef9c3; color: #a16207; }
+    .tag-checklist { background: #fce7f3; color: #9d174d; }
+    .resource-link { display: inline-block; color: #2563eb; font-weight: 600; font-size: 0.88rem; text-decoration: none; }
+    .resource-link:hover { text-decoration: underline; }
+    /* Interactive Fitzpatrick tool */
+    .tool-card { border: 1.5px solid #dbeafe; border-radius: 12px; padding: 1.75rem; background: #eff6ff; margin-bottom: 1.25rem; }
+    .tool-card h3 { font-size: 1.05rem; font-weight: 700; color: #1d4ed8; margin-bottom: 0.5rem; }
+    .tool-card p { font-size: 0.88rem; color: #374151; margin-bottom: 1.25rem; }
+    .skin-options { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+    .skin-btn { border: 2px solid #e5e7eb; border-radius: 8px; padding: 0.5rem 0.9rem; font-size: 0.82rem; font-weight: 600; cursor: pointer; background: #fff; transition: all 0.2s; }
+    .skin-btn:hover { border-color: #2563eb; }
+    .skin-btn.active { border-color: #2563eb; background: #2563eb; color: #fff; }
+    .ipl-result { display: none; padding: 1rem; border-radius: 8px; font-size: 0.88rem; font-weight: 500; }
+    .result-safe { background: #dcfce7; color: #15803d; }
+    .result-caution { background: #fef9c3; color: #92400e; }
+    .result-unsafe { background: #fee2e2; color: #b91c1c; }
+    /* Timeline tool */
+    .timeline-select { width: 100%; padding: 0.6rem 0.75rem; border: 1.5px solid #e5e7eb; border-radius: 8px; font-size: 0.9rem; margin-bottom: 1rem; background: #fff; }
+    .timeline-result { display: none; }
+    .timeline-row { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 0.75rem; }
+    .timeline-dot { width: 28px; height: 28px; border-radius: 50%; background: #2563eb; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 0.78rem; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+    .timeline-text { font-size: 0.88rem; color: #374151; }
+    .timeline-text strong { color: #111827; }
+    /* Quick guides grid */
+    .guide-list { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.75rem; }
+    .guide-list li a { display: flex; align-items: center; gap: 0.6rem; padding: 0.75rem 1rem; border: 1px solid #e5e7eb; border-radius: 8px; text-decoration: none; color: #374151; font-size: 0.88rem; font-weight: 500; background: #fff; transition: all 0.2s; }
+    .guide-list li a:hover { border-color: #2563eb; color: #2563eb; background: #eff6ff; }
+    footer { background: #f9fafb; border-top: 1px solid #e5e7eb; padding: 2rem; text-align: center; font-size: 0.85rem; color: #6b7280; }
+    footer a { color: #2563eb; text-decoration: none; }
+    @media (max-width: 640px) { .nav-links { gap: 1rem; } h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="/" class="site-brand">AesteticAdvice</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/best-at-home-aesthetic-devices/">Best Of</a></li>
+      <li><a href="/resources/">Resources</a></li>
+      <li><a href="/blog/">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="page-header">
+    <h1>🔬 Resources & Tools</h1>
+    <p>Free guides, checklists, and interactive tools to help you get better results from at-home aesthetic treatments.</p>
+  </div>
+
+  <!-- INTERACTIVE TOOLS -->
+  <h2 class="section-title">⚡ Interactive Tools</h2>
+
+  <!-- Fitzpatrick / IPL Eligibility Checker -->
+  <div class="tool-card">
+    <h3>🔍 IPL & Laser Hair Removal Eligibility Checker</h3>
+    <p>IPL is not safe for all skin tones. Select your skin type below to see whether at-home IPL devices are safe for you — and which devices are best for your tone.</p>
+    <div class="skin-options">
+      <button class="skin-btn" onclick="showIPLResult(1)" data-type="1">Type I<br><small>Very fair, burns always</small></button>
+      <button class="skin-btn" onclick="showIPLResult(2)" data-type="2">Type II<br><small>Fair, burns easily</small></button>
+      <button class="skin-btn" onclick="showIPLResult(3)" data-type="3">Type III<br><small>Medium, burns sometimes</small></button>
+      <button class="skin-btn" onclick="showIPLResult(4)" data-type="4">Type IV<br><small>Olive/tan, rarely burns</small></button>
+      <button class="skin-btn" onclick="showIPLResult(5)" data-type="5">Type V<br><small>Brown, very rarely burns</small></button>
+      <button class="skin-btn" onclick="showIPLResult(6)" data-type="6">Type VI<br><small>Deep brown/black</small></button>
+    </div>
+    <div id="ipl-result" class="ipl-result"></div>
+  </div>
+
+  <!-- Treatment Timeline Calculator -->
+  <div class="tool-card">
+    <h3>📅 Treatment Timeline Estimator</h3>
+    <p>Select a treatment to see a realistic week-by-week timeline for when you'll start seeing results.</p>
+    <select class="timeline-select" onchange="showTimeline(this.value)">
+      <option value="">— Select a treatment —</option>
+      <option value="ipl">IPL / Laser Hair Removal</option>
+      <option value="led">LED Light Therapy (Anti-Aging)</option>
+      <option value="microneedling">Microneedling (0.5mm)</option>
+      <option value="tretinoin">Tretinoin (Prescription Retinoid)</option>
+      <option value="minoxidil">Minoxidil (Hair Loss)</option>
+    </select>
+    <div id="timeline-result" class="timeline-result"></div>
+  </div>
+
+  <!-- CATEGORY QUICK GUIDES -->
+  <h2 class="section-title">📋 Quick Reference Guides</h2>
+  <div class="resource-grid">
+
+    <div class="resource-card">
+      <div class="resource-icon">💡</div>
+      <span class="resource-tag tag-guide">Guide</span>
+      <h3>LED Light Therapy: Complete Beginner's Guide</h3>
+      <p>Wavelengths explained, what each does, which devices have clinical backing, and how to build a protocol.</p>
+      <a href="/blog/red-light-therapy-face-benefits/" class="resource-link">Read Guide →</a>
+    </div>
+
+    <div class="resource-card">
+      <div class="resource-icon">🔬</div>
+      <span class="resource-tag tag-guide">Guide</span>
+      <h3>Tretinoin vs Retinol: What's Actually Different</h3>
+      <p>Potency differences, how to start without irritation, and which telehealth services offer the cheapest tretinoin.</p>
+      <a href="/blog/tretinoin-vs-retinol-difference/" class="resource-link">Read Guide →</a>
+    </div>
+
+    <div class="resource-card">
+      <div class="resource-icon">💆</div>
+      <span class="resource-tag tag-guide">Guide</span>
+      <h3>Microneedling at Home: Safe Depth & Technique</h3>
+      <p>Which depths are safe, how to sanitize properly, best serums to use, and what to absolutely avoid.</p>
+      <a href="/microneedling-devices/" class="resource-link">Read Guide →</a>
+    </div>
+
+    <div class="resource-card">
+      <div class="resource-icon">💇</div>
+      <span class="resource-tag tag-guide">Guide</span>
+      <h3>Hair Loss: What Has Clinical Evidence (and What Doesn't)</h3>
+      <p>Finasteride, minoxidil, laser caps, Nutrafol, biotin — ranked by actual evidence strength.</p>
+      <a href="/hair-loss-treatments/" class="resource-link">Read Guide →</a>
+    </div>
+
+    <div class="resource-card">
+      <div class="resource-icon">🦷</div>
+      <span class="resource-tag tag-guide">Guide</span>
+      <h3>Teeth Whitening: What Actually Works</h3>
+      <p>Only hydrogen peroxide whitens enamel. Here's what to buy, what to skip, and why LED-only kits are a waste.</p>
+      <a href="/teeth-whitening/" class="resource-link">Read Guide →</a>
+    </div>
+
+    <div class="resource-card">
+      <div class="resource-icon">🌿</div>
+      <span class="resource-tag tag-guide">Guide</span>
+      <h3>IPL vs. Laser Hair Removal: Which Is Right for You?</h3>
+      <p>True cost breakdown, skin tone safety chart, expected session counts, and top device comparison.</p>
+      <a href="/blog/ipl-vs-laser-hair-removal-home/" class="resource-link">Read Guide →</a>
+    </div>
+
+  </div>
+
+  <!-- BUYING CHECKLISTS -->
+  <h2 class="section-title">✅ Pre-Purchase Checklists</h2>
+  <div class="resource-grid">
+
+    <div class="resource-card">
+      <div class="resource-icon">📋</div>
+      <span class="resource-tag tag-checklist">Checklist</span>
+      <h3>Before You Buy an LED Mask</h3>
+      <p>5 questions to ask before spending $200–$400 on an LED mask. Power density, wavelengths, FDA clearance, and more.</p>
+      <ul style="font-size:0.82rem;color:#374151;list-style:none;margin-bottom:1rem;">
+        <li style="margin-bottom:0.3rem;">✓ Does it have peer-reviewed clinical data?</li>
+        <li style="margin-bottom:0.3rem;">✓ Is it FDA-cleared (not just "FDA registered")?</li>
+        <li style="margin-bottom:0.3rem;">✓ Does it include both red AND near-infrared?</li>
+        <li style="margin-bottom:0.3rem;">✓ Is the fit flexible (silicone) or rigid?</li>
+        <li style="margin-bottom:0.3rem;">✓ What's the power density (mW/cm²)?</li>
+      </ul>
+      <a href="/led-light-therapy-masks/" class="resource-link">See Our LED Mask Reviews →</a>
+    </div>
+
+    <div class="resource-card">
+      <div class="resource-icon">📋</div>
+      <span class="resource-tag tag-checklist">Checklist</span>
+      <h3>Before You Buy an IPL Device</h3>
+      <p>The 5 questions that determine whether an IPL device will work — and be safe — for you specifically.</p>
+      <ul style="font-size:0.82rem;color:#374151;list-style:none;margin-bottom:1rem;">
+        <li style="margin-bottom:0.3rem;">✓ What is your Fitzpatrick skin type? (I–IV = safe)</li>
+        <li style="margin-bottom:0.3rem;">✓ Is your hair color dark enough? (dark brown/black only)</li>
+        <li style="margin-bottom:0.3rem;">✓ Does the device have a skin tone sensor?</li>
+        <li style="margin-bottom:0.3rem;">✓ How many flashes does it last? (300K+ is good)</li>
+        <li style="margin-bottom:0.3rem;">✓ What's the window size? (bigger = faster treatment)</li>
+      </ul>
+      <a href="/at-home-laser-hair-removal/" class="resource-link">See Our IPL Reviews →</a>
+    </div>
+
+    <div class="resource-card">
+      <div class="resource-icon">📋</div>
+      <span class="resource-tag tag-checklist">Checklist</span>
+      <h3>Before You Start Tretinoin</h3>
+      <p>Starting tretinoin the right way makes the difference between a smooth transition and weeks of unnecessary irritation.</p>
+      <ul style="font-size:0.82rem;color:#374151;list-style:none;margin-bottom:1rem;">
+        <li style="margin-bottom:0.3rem;">✓ Start at 0.025% — not 0.05% or 0.1%</li>
+        <li style="margin-bottom:0.3rem;">✓ Apply to dry skin (wait 20 min after washing)</li>
+        <li style="margin-bottom:0.3rem;">✓ Use pea-sized amount for whole face</li>
+        <li style="margin-bottom:0.3rem;">✓ 2–3 nights/week for first month</li>
+        <li style="margin-bottom:0.3rem;">✓ SPF 30+ every morning — non-negotiable</li>
+      </ul>
+      <a href="/prescription-skincare/" class="resource-link">See Prescription Skincare Options →</a>
+    </div>
+
+  </div>
+
+  <!-- COST COMPARISON TABLES -->
+  <h2 class="section-title">💰 Cost Comparison Guides</h2>
+  <div class="resource-grid">
+
+    <div class="resource-card">
+      <div class="resource-icon">💵</div>
+      <span class="resource-tag tag-free">Free</span>
+      <h3>At-Home vs. Professional: 5-Year Cost Breakdown</h3>
+      <p>IPL device ($350) vs. laser clinic sessions ($3,000–$8,000+) — the full math over 5 years across common treatment areas.</p>
+      <a href="/blog/ipl-vs-laser-hair-removal-home/" class="resource-link">See Cost Breakdown →</a>
+    </div>
+
+    <div class="resource-card">
+      <div class="resource-icon">💵</div>
+      <span class="resource-tag tag-free">Free</span>
+      <h3>Prescription Skincare: Telehealth vs. Derm Visit</h3>
+      <p>Curology ($30–50/mo) vs. dermatologist office visit ($200–400) — what you actually get for the price difference.</p>
+      <a href="/prescription-skincare/" class="resource-link">Compare Options →</a>
+    </div>
+
+    <div class="resource-card">
+      <div class="resource-icon">💵</div>
+      <span class="resource-tag tag-free">Free</span>
+      <h3>Hair Loss Treatment Cost Comparison</h3>
+      <p>Finasteride + minoxidil vs. Nutrafol vs. laser cap vs. hair transplant — cost and evidence compared.</p>
+      <a href="/hair-loss-treatments/" class="resource-link">Compare Options →</a>
+    </div>
+
+  </div>
+
+  <!-- QUICK LINKS -->
+  <h2 class="section-title">🔗 Quick Links</h2>
+  <ul class="guide-list">
+    <li><a href="/best-at-home-aesthetic-devices/">🏆 10 Best At-Home Devices (Mega Roundup)</a></li>
+    <li><a href="/led-light-therapy-masks/">💡 LED Light Therapy Masks — Full Reviews</a></li>
+    <li><a href="/at-home-laser-hair-removal/">🔥 IPL & Laser Hair Removal — Full Reviews</a></li>
+    <li><a href="/microneedling-devices/">🔬 Microneedling Devices — Full Reviews</a></li>
+    <li><a href="/hair-loss-treatments/">💇 Hair Loss Treatments — Full Reviews</a></li>
+    <li><a href="/teeth-whitening/">🦷 Teeth Whitening — Full Reviews</a></li>
+    <li><a href="/prescription-skincare/">💊 Prescription Skincare — Full Reviews</a></li>
+    <li><a href="/blog/">📝 All Blog Articles</a></li>
+    <li><a href="/blog/tretinoin-vs-retinol-difference/">Tretinoin vs Retinol Explainer</a></li>
+    <li><a href="/blog/best-led-mask-for-acne/">Best LED Mask for Acne</a></li>
+    <li><a href="/blog/ipl-vs-laser-hair-removal-home/">IPL vs. Laser Comparison</a></li>
+    <li><a href="/blog/minoxidil-for-women-hair-loss/">Minoxidil for Women</a></li>
+  </ul>
+
+</main>
+
+<!-- Interactive Tool Scripts -->
+<script>
+const IPL_RESULTS = {
+  1: { cls: 'result-safe',    text: '✅ <strong>Type I (Very Fair):</strong> All at-home IPL and laser devices are safe for your skin type. You\'ll see the fastest results. Top picks: Braun Silk-Expert Pro 5, Tria Beauty 4X. <a href="/at-home-laser-hair-removal/" style="color:inherit;font-weight:700;">See full reviews →</a>' },
+  2: { cls: 'result-safe',    text: '✅ <strong>Type II (Fair):</strong> All at-home IPL devices are safe. Excellent candidate for both IPL and true laser. Top picks: Braun Pro 5, Tria 4X, Ulike Air 3. <a href="/at-home-laser-hair-removal/" style="color:inherit;font-weight:700;">See full reviews →</a>' },
+  3: { cls: 'result-safe',    text: '✅ <strong>Type III (Medium):</strong> IPL is safe with a device that has a skin tone sensor. Braun Silk-Expert Pro 5 (auto-adjusts) and Ulike Air 3 are ideal. Avoid fixed-intensity IPL devices without sensors. <a href="/at-home-laser-hair-removal/" style="color:inherit;font-weight:700;">See full reviews →</a>' },
+  4: { cls: 'result-caution', text: '⚠️ <strong>Type IV (Olive/Tan):</strong> Use only devices with automatic skin tone sensors. Braun Silk-Expert Pro 5 and Ulike Air 3 are safest. Do NOT use Tria 4X (limited to Fitzpatrick I–III). Always do a patch test first. <a href="/at-home-laser-hair-removal/" style="color:inherit;font-weight:700;">See safe options →</a>' },
+  5: { cls: 'result-unsafe',  text: '❌ <strong>Type V (Brown):</strong> Standard IPL devices are NOT safe for Type V skin — burn risk is significant. See a professional using Nd:YAG laser, which is specifically designed for darker skin tones. Do not use consumer IPL devices. <a href="/at-home-laser-hair-removal/" style="color:inherit;font-weight:700;">Learn more →</a>' },
+  6: { cls: 'result-unsafe',  text: '❌ <strong>Type VI (Deep Brown/Black):</strong> At-home IPL and diode laser are NOT safe. Professional Nd:YAG laser (1064nm) is the correct treatment — it bypasses melanin in the epidermis. Consult a clinic that specializes in dark skin tones. <a href="/at-home-laser-hair-removal/" style="color:inherit;font-weight:700;">Learn more →</a>' }
+};
+
+function showIPLResult(type) {
+  document.querySelectorAll('.skin-btn').forEach(b => b.classList.remove('active'));
+  event.target.closest('.skin-btn').classList.add('active');
+  const el = document.getElementById('ipl-result');
+  const r = IPL_RESULTS[type];
+  el.className = 'ipl-result ' + r.cls;
+  el.innerHTML = r.text;
+  el.style.display = 'block';
+}
+
+const TIMELINES = {
+  ipl: [
+    { week: "Wk 1–2", text: "<strong>First session.</strong> Some hairs don't regrow in treated area. Mild redness resolves in 24hrs." },
+    { week: "Wk 4–6", text: "<strong>Session 2–3.</strong> 20–30% reduction visible on fine areas. Coarser hair may need more sessions." },
+    { week: "Wk 8–12", text: "<strong>Sessions 4–5.</strong> 50–70% reduction. Noticeable difference vs. before." },
+    { week: "Month 4–6", text: "<strong>Sessions 6–8.</strong> 70–90% permanent reduction achieved. Maintenance phase begins." },
+    { week: "Year 2+", text: "<strong>1–2 touch-up sessions/year</strong> to maintain results long-term." },
+  ],
+  led: [
+    { week: "Wk 1–2", text: "<strong>Hydration + glow.</strong> Many users report improved radiance within the first 2 weeks. Collagen changes not yet visible." },
+    { week: "Wk 4–6", text: "<strong>Texture improvement.</strong> Skin feels smoother. Fine surface lines begin to soften." },
+    { week: "Wk 8–12", text: "<strong>Visible anti-aging results.</strong> Measurable collagen density improvements in clinical studies at this stage." },
+    { week: "Month 4–6", text: "<strong>Maximum initial results.</strong> Collagen remodeling continues. Reduce to maintenance 3–4x/week." },
+    { week: "Ongoing", text: "<strong>Maintenance 3–4x/week</strong> preserves results indefinitely." },
+  ],
+  microneedling: [
+    { week: "Day 1–2", text: "<strong>Redness + sensitivity.</strong> Normal post-treatment response. Don't apply actives (vitamin C, retinol)." },
+    { week: "Wk 1–2", text: "<strong>Skin normalizes.</strong> Initial texture improvement visible. Use HA serum for hydration." },
+    { week: "Wk 4–6", text: "<strong>Collagen building begins.</strong> Visible improvement in fine lines and pore appearance." },
+    { week: "Month 2–3", text: "<strong>Peak initial results.</strong> Collagen remodeling progresses. Acne scar improvement visible." },
+    { week: "Month 3–6", text: "<strong>Full results.</strong> Continue every 4–6 weeks for ongoing improvement." },
+  ],
+  tretinoin: [
+    { week: "Wk 1–4", text: "<strong>Adjustment period.</strong> Dryness, flaking, sensitivity are normal. Use 2–3x/week only." },
+    { week: "Wk 4–8", text: "<strong>Purging may occur</strong> for some (congestion clears). Don't stop — this means it's working." },
+    { week: "Wk 8–12", text: "<strong>Skin normalizes.</strong> First texture improvements visible. Increase to 4–5x/week if tolerating well." },
+    { week: "Month 3–6", text: "<strong>Clear anti-aging + acne results.</strong> Hyperpigmentation fading, smoother texture, fewer breakouts." },
+    { week: "Month 6–12", text: "<strong>Full results.</strong> Maximum anti-aging benefit. Nightly use recommended for maintenance." },
+  ],
+  minoxidil: [
+    { week: "Wk 1–4", text: "<strong>No visible change yet.</strong> Minoxidil is working at the follicle level but nothing is visible yet." },
+    { week: "Wk 2–8", text: "<strong>Shedding phase may occur.</strong> Weak hairs shed to make way for stronger growth. Normal — don't stop." },
+    { week: "Month 3–4", text: "<strong>First regrowth visible.</strong> New fine hairs appear along hairline or thinning areas." },
+    { week: "Month 6", text: "<strong>Meaningful results.</strong> Noticeable density improvement in most users." },
+    { week: "Month 12", text: "<strong>Maximum results.</strong> Full effect realized. Must continue indefinitely to maintain." },
+  ]
+};
+
+function showTimeline(val) {
+  const el = document.getElementById('timeline-result');
+  if (!val) { el.style.display = 'none'; return; }
+  const rows = TIMELINES[val];
+  let html = '<div style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:1.25rem;margin-top:0.5rem;">';
+  rows.forEach(r => {
+    html += `<div class="timeline-row">
+      <div class="timeline-dot">${r.week.substring(0,3)}</div>
+      <div class="timeline-text"><strong style="color:#6b7280;font-size:0.78rem;text-transform:uppercase;">${r.week}</strong><br>${r.text}</div>
+    </div>`;
+  });
+  html += '</div>';
+  el.innerHTML = html;
+  el.style.display = 'block';
+}
+</script>
+
+<footer>
+  <p>© 2026 AesteticAdvice · <a href="/">Home</a> · <a href="/best-at-home-aesthetic-devices/">Best Of</a> · <a href="/blog/">Blog</a> · Evidence-based reviews of at-home aesthetic devices</p>
+</footer>
+
+</body>
+</html>
