@@ -270,4 +270,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+  <url><loc>https://aesteticadvice.com/skincare-serums/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aesteticadvice.com/sunscreen-spf/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aesteticadvice.com/retinol-anti-aging/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
