@@ -2,28 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog - AesteticAdvice</title>
-<meta name="description" content="Expert articles on aesthetic treatments, skincare, hair loss, and beauty wellness.">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Beauty & Skincare Blog — Evidence-Based Guides & Reviews | AesteticAdvice</title>
+<meta name="description" content="Expert-written guides on skincare ingredients, at-home devices, hair loss treatments, and beauty wellness. Evidence-based, no fluff.">
 <link rel="canonical" href="https://aesteticadvice.com/blog/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Blog - AesteticAdvice">
-<meta property="og:description" content="Expert articles on aesthetic treatments, skincare, hair loss, and beauty wellness.">
+<meta property="og:title" content="Beauty & Skincare Blog — Evidence-Based Guides & Reviews | AesteticAdvice">
+<meta property="og:description" content="Expert-written guides on skincare ingredients, at-home devices, hair loss treatments, and beauty wellness. Evidence-based, no fluff.">
 <meta property="og:url" content="https://aesteticadvice.com/blog/">
 <meta property="og:site_name" content="AesteticAdvice">
-<meta property="og:image" content="https://aesteticadvice.com/images/og-category.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Blog - AesteticAdvice">
-<meta name="twitter:description" content="Expert articles on aesthetic treatments, skincare, hair loss, and beauty wellness.">
-<!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HWBRVBXZT4"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HWBRVBXZT4');</script>
-<!-- Schema -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aesteticadvice.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://aesteticadvice.com/blog/"}]}</script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HWBRVBXZT4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HWBRVBXZT4');</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
@@ -38,8 +31,6 @@ html{scroll-behavior:smooth;}
 body{font-family:var(--sans);color:var(--body);background:#fff;line-height:1.65;font-size:16px;}
 a{color:inherit;text-decoration:none;}
 img{max-width:100%;height:auto;}
-
-/* NAV */
 .top-bar{background:var(--brand);color:#fff;text-align:center;font-size:0.78rem;font-weight:600;padding:7px 1rem;}
 .top-bar a{color:#fff;text-decoration:underline;}
 .site-header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:200;box-shadow:var(--shadow);}
@@ -48,140 +39,153 @@ img{max-width:100%;height:auto;}
 .logo span{color:var(--navy);}
 .nav-links{display:flex;gap:0.2rem;align-items:center;flex-wrap:wrap;}
 .nav-links a{color:var(--body);font-size:0.87rem;font-weight:500;padding:5px 11px;border-radius:6px;transition:all 0.15s;}
-.nav-links a:hover{color:var(--brand);background:var(--brand-light);}
+.nav-links a:hover,.nav-links a.active{color:var(--brand);background:var(--brand-light);font-weight:700;}
 .nav-links .nav-cta{background:var(--brand);color:#fff!important;border-radius:20px;padding:6px 16px;font-weight:700;}
 .nav-links .nav-cta:hover{background:var(--brand-dark)!important;}
 .cat-bar{border-top:1px solid var(--border);background:#fff;overflow-x:auto;scrollbar-width:none;}
 .cat-bar::-webkit-scrollbar{display:none;}
 .cat-bar-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;gap:0.4rem;height:40px;align-items:center;}
 .cat-pill{white-space:nowrap;font-size:0.78rem;font-weight:600;color:var(--muted);padding:4px 12px;border-radius:20px;border:1.5px solid var(--border);transition:all 0.15s;}
-.cat-pill:hover{color:var(--brand);border-color:var(--brand);background:var(--brand-light);}
-
-/* BREADCRUMB */
+.cat-pill:hover,.cat-pill.active{color:var(--brand);border-color:var(--brand);background:var(--brand-light);}
 .breadcrumb{max-width:1200px;margin:0 auto;padding:1rem 1.5rem 0;font-size:0.8rem;color:var(--muted);display:flex;gap:0.4rem;flex-wrap:wrap;align-items:center;}
 .breadcrumb a{color:var(--brand);}
 .breadcrumb a:hover{text-decoration:underline;}
-.breadcrumb-sep{color:var(--border);}
-
-/* MAIN CONTENT WRAPPER */
-.page-content{max-width:1200px;margin:0 auto;padding:1.5rem 1.5rem 4rem;}
-
-/* PAGE HERO */
-.page-hero{background:linear-gradient(135deg,#f0fdfa,#ccfbf1);border-radius:16px;padding:2.5rem 2rem;margin-bottom:2.5rem;text-align:center;}
-.hero-eyebrow{display:inline-block;background:var(--brand);color:#fff;font-size:0.7rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:0.85rem;}
-.page-hero h1{font-family:var(--serif);font-size:2.2rem;font-weight:900;color:var(--navy);line-height:1.22;margin-bottom:0.85rem;}
-.page-hero p{color:var(--muted);font-size:1rem;max-width:680px;margin:0 auto 1rem;}
-.page-hero-meta{font-size:0.82rem;color:var(--muted);display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;}
-
-/* TRUST STRIP */
-.trust-strip{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;padding:1rem;background:var(--bg-soft);border-radius:10px;margin-bottom:2rem;font-size:0.83rem;color:var(--muted);}
-.trust-strip span{display:flex;align-items:center;gap:0.4rem;}
-
-/* PRODUCT CARDS */
-.product-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-bottom:2rem;}
-.product-card{border:1.5px solid var(--border);border-radius:var(--radius);padding:1.5rem;display:grid;grid-template-columns:auto 1fr auto;gap:1.5rem;align-items:start;transition:box-shadow 0.2s;background:#fff;}
+.disclosure-band{max-width:1200px;margin:0.75rem auto 0;padding:0.6rem 1.5rem;background:#fef9c3;border:1px solid #fde68a;border-radius:8px;font-size:0.78rem;color:#78350f;}
+.page-wrap{max-width:1200px;margin:0 auto;padding:0 1.5rem 5rem;}
+.hub-hero{background:linear-gradient(135deg,#f0fdfa 0%,#ccfbf1 60%,#e0f2fe 100%);border-radius:20px;padding:3rem 2.5rem;margin:2rem 0;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;}
+.hub-hero-text .eyebrow{display:inline-block;background:var(--brand);color:#fff;font-size:0.7rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:1rem;}
+.hub-hero-text h1{font-family:var(--serif);font-size:2.4rem;font-weight:900;color:var(--navy);line-height:1.2;margin-bottom:1rem;}
+.hub-hero-text p{color:var(--muted);font-size:1rem;max-width:560px;line-height:1.7;margin-bottom:1.5rem;}
+.hub-hero-meta{display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.82rem;color:var(--muted);}
+.hub-hero-meta span{display:flex;align-items:center;gap:0.4rem;}
+.hub-hero-badge{background:#fff;border-radius:16px;padding:1.5rem;box-shadow:var(--shadow-lg);text-align:center;min-width:160px;}
+.hub-hero-badge .badge-num{font-family:var(--serif);font-size:2.5rem;font-weight:900;color:var(--brand);}
+.hub-hero-badge .badge-label{font-size:0.8rem;color:var(--muted);font-weight:600;margin-top:0.25rem;}
+.quick-picks{background:var(--navy);border-radius:14px;padding:1.5rem 2rem;margin-bottom:2.5rem;}
+.quick-picks-head{display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem;}
+.quick-picks-head h2{font-family:var(--serif);font-size:1.2rem;color:#fff;font-weight:700;}
+.quick-picks-head .qp-label{background:var(--amazon);color:#fff;font-size:0.7rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;padding:3px 10px;border-radius:20px;}
+.qp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;}
+.qp-card{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:1rem;transition:all 0.2s;}
+.qp-card:hover{background:rgba(255,255,255,0.14);transform:translateY(-2px);}
+.qp-badge{font-size:0.65rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--amazon);margin-bottom:0.4rem;}
+.qp-name{font-size:0.92rem;font-weight:700;color:#fff;margin-bottom:0.35rem;line-height:1.3;}
+.qp-price{font-size:0.82rem;color:rgba(255,255,255,0.6);margin-bottom:0.75rem;}
+.qp-btn{display:block;background:var(--amazon);color:#fff;font-size:0.78rem;font-weight:700;padding:7px 14px;border-radius:8px;text-align:center;transition:background 0.15s;}
+.qp-btn:hover{background:var(--amazon-dark);}
+.section-head{display:flex;align-items:baseline;gap:1rem;margin:2.5rem 0 1.5rem;}
+.section-head h2{font-family:var(--serif);font-size:1.7rem;font-weight:900;color:var(--navy);}
+.section-head .see-all{font-size:0.82rem;color:var(--brand);font-weight:600;margin-left:auto;}
+.section-head .see-all:hover{text-decoration:underline;}
+.ranked-list{display:flex;flex-direction:column;gap:1.5rem;}
+.product-card{border:1.5px solid var(--border);border-radius:var(--radius);background:#fff;overflow:hidden;transition:box-shadow 0.2s;}
 .product-card:hover{box-shadow:var(--shadow-lg);}
-.product-rank-num{font-family:var(--serif);font-size:2.8rem;font-weight:900;color:var(--border);line-height:1;padding-top:4px;}
-.product-info{}
-.product-badge{display:inline-block;background:var(--brand-light);color:var(--brand-dark);font-size:0.7rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;padding:3px 10px;border-radius:20px;margin-bottom:0.5rem;}
-.product-name{font-size:1.25rem;font-weight:800;color:var(--navy);margin-bottom:0.35rem;}
-.product-stars{color:#f59e0b;font-size:1rem;margin-bottom:0.35rem;}
-.product-tagline{font-size:0.88rem;color:var(--muted);font-style:italic;margin-bottom:0.75rem;}
-.product-desc{font-size:0.93rem;color:var(--body);margin-bottom:1rem;line-height:1.6;}
-.pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:1rem;}
-.pros h5,.cons h5{font-size:0.75rem;font-weight:800;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.4rem;}
-.pros h5{color:#16a34a;}
-.cons h5{color:#dc2626;}
-.pros ul,.cons ul{list-style:none;font-size:0.85rem;color:var(--body);}
-.pros li::before{content:"✓ ";color:#16a34a;font-weight:700;}
-.cons li::before{content:"✗ ";color:#dc2626;font-weight:700;}
-.pros li,.cons li{margin-bottom:3px;}
-.product-cta{display:flex;flex-direction:column;align-items:center;gap:0.5rem;min-width:140px;}
-.product-price{font-size:1.15rem;font-weight:800;color:var(--navy);}
-.buy-btn{display:block;background:var(--amazon);color:#fff;padding:11px 20px;border-radius:8px;font-weight:700;font-size:0.88rem;text-align:center;transition:background 0.15s;white-space:nowrap;}
-.buy-btn:hover{background:var(--amazon-dark);}
-.buy-note{font-size:0.72rem;color:var(--muted);text-align:center;}
-
-/* COMPARISON TABLE */
-.compare-table{width:100%;border-collapse:collapse;margin:2rem 0;font-size:0.88rem;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);}
-.compare-table th{background:var(--navy);color:#fff;padding:12px 16px;text-align:left;font-weight:700;}
-.compare-table td{padding:11px 16px;border-bottom:1px solid var(--border);color:var(--body);}
-.compare-table tr:last-child td{border-bottom:none;}
-.compare-table tr:nth-child(even) td{background:var(--bg-soft);}
-.compare-table .winner{background:#f0fdf4!important;font-weight:700;color:#15803d;}
-.winner-badge{background:#dcfce7;color:#15803d;font-size:0.65rem;font-weight:800;padding:2px 8px;border-radius:10px;margin-left:6px;}
-
-/* BUYING GUIDE SECTIONS */
-.guide-section{margin:2.5rem 0;}
-.guide-section h2{font-family:var(--serif);font-size:1.5rem;font-weight:900;color:var(--navy);margin-bottom:0.85rem;padding-bottom:0.5rem;border-bottom:2px solid var(--brand-light);}
-.guide-section h3{font-size:1.1rem;font-weight:700;color:var(--navy);margin:1.5rem 0 0.5rem;}
-.guide-section p{color:var(--body);font-size:0.95rem;line-height:1.7;margin-bottom:1rem;}
-.guide-section ul,.guide-section ol{padding-left:1.4rem;margin-bottom:1rem;}
-.guide-section li{color:var(--body);font-size:0.95rem;margin-bottom:5px;}
-.callout{background:#f0fdf4;border-left:4px solid #22c55e;padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin:1.25rem 0;font-size:0.93rem;}
-
-/* FAQ */
+.product-card.top-pick{border-color:var(--brand);}
+.pc-header{display:grid;grid-template-columns:56px 1fr auto;gap:1.25rem;padding:1.5rem;align-items:start;}
+.pc-rank{width:52px;height:52px;background:var(--navy);color:#fff;font-family:var(--serif);font-size:1.4rem;font-weight:900;display:flex;align-items:center;justify-content:center;border-radius:10px;flex-shrink:0;}
+.pc-rank.gold{background:linear-gradient(135deg,#f59e0b,#d97706);}
+.pc-rank.silver{background:linear-gradient(135deg,#9ca3af,#6b7280);}
+.pc-rank.bronze{background:linear-gradient(135deg,#b45309,#92400e);}
+.pc-meta .pc-badge{display:inline-block;background:var(--brand-light);color:var(--brand-dark);font-size:0.65rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;padding:3px 8px;border-radius:20px;margin-bottom:0.4rem;}
+.pc-meta .pc-name{font-family:var(--serif);font-size:1.25rem;font-weight:700;color:var(--navy);margin-bottom:0.2rem;}
+.pc-meta .pc-tagline{font-size:0.85rem;color:var(--muted);}
+.pc-stars{font-size:0.85rem;color:var(--amazon);font-weight:600;margin-top:0.3rem;}
+.pc-cta-block{display:flex;flex-direction:column;gap:0.5rem;align-items:flex-end;min-width:130px;}
+.pc-price{font-size:1.1rem;font-weight:700;color:var(--navy);text-align:right;}
+.pc-amazon-btn{display:inline-block;background:var(--amazon);color:#fff;font-size:0.82rem;font-weight:700;padding:9px 18px;border-radius:8px;white-space:nowrap;transition:background 0.15s;}
+.pc-amazon-btn:hover{background:var(--amazon-dark);}
+.pc-review-link{font-size:0.78rem;color:var(--brand);font-weight:600;text-align:right;}
+.pc-review-link:hover{text-decoration:underline;}
+.pc-body{padding:0 1.5rem 1.5rem;border-top:1px solid var(--border);}
+.pc-desc{padding:1.25rem 0 1rem;color:var(--body);font-size:0.93rem;line-height:1.7;}
+.pc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.pc-pros h4,.pc-cons h4{font-size:0.75rem;font-weight:800;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:0.5rem;}
+.pc-pros h4{color:#059669;}
+.pc-cons h4{color:#dc2626;}
+.pc-pros ul,.pc-cons ul{list-style:none;}
+.pc-pros ul li::before{content:"✓ ";color:#059669;font-weight:700;}
+.pc-cons ul li::before{content:"✗ ";color:#dc2626;font-weight:700;}
+.pc-pros ul li,.pc-cons ul li{font-size:0.84rem;color:var(--body);padding:0.2rem 0;line-height:1.4;}
+.pc-verdict{margin-top:1rem;background:var(--bg-soft);border-left:3px solid var(--brand);border-radius:0 8px 8px 0;padding:0.85rem 1rem;font-size:0.88rem;color:var(--body);}
+.pc-verdict strong{color:var(--navy);}
+.buying-guide{background:linear-gradient(135deg,#f0fdfa,#f8fafc);border-radius:16px;padding:2.5rem;margin:2.5rem 0;}
+.buying-guide h2{font-family:var(--serif);font-size:1.6rem;font-weight:900;color:var(--navy);margin-bottom:1.5rem;}
+.guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;}
+.guide-item{background:#fff;border-radius:10px;padding:1.25rem;box-shadow:var(--shadow);}
+.guide-item h3{font-size:0.95rem;font-weight:700;color:var(--navy);margin-bottom:0.5rem;display:flex;align-items:center;gap:0.5rem;}
+.guide-item p{font-size:0.84rem;color:var(--muted);line-height:1.55;}
+.article-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;margin-top:1.25rem;}
+.article-card{border:1.5px solid var(--border);border-radius:var(--radius);padding:1.25rem;transition:all 0.2s;background:#fff;}
+.article-card:hover{border-color:var(--brand);box-shadow:var(--shadow);}
+.article-cat{font-size:0.68rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--brand);margin-bottom:0.5rem;}
+.article-card h3{font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:0.5rem;}
+.article-card p{font-size:0.83rem;color:var(--muted);line-height:1.5;margin-bottom:0.75rem;}
+.article-read{font-size:0.8rem;color:var(--brand);font-weight:600;}
 .faq-section{margin:2.5rem 0;}
-.faq-section h2{font-family:var(--serif);font-size:1.4rem;font-weight:900;color:var(--navy);margin-bottom:1.25rem;}
-.faq-item{border-bottom:1px solid var(--border);padding:1rem 0;}
-.faq-item:last-child{border-bottom:none;}
-.faq-q{font-weight:700;color:var(--navy);margin-bottom:0.4rem;}
-.faq-a{color:var(--body);font-size:0.93rem;line-height:1.65;}
-
-/* RELATED ARTICLES */
-.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem;}
-.related-card{border:1px solid var(--border);border-radius:var(--radius);padding:1rem;transition:box-shadow 0.2s;}
-.related-card:hover{box-shadow:var(--shadow);}
-.related-tag{font-size:0.72rem;font-weight:800;text-transform:uppercase;color:var(--brand);margin-bottom:0.4rem;}
-.related-title{font-size:0.9rem;font-weight:700;color:var(--navy);line-height:1.35;}
-.related-title a:hover{color:var(--brand);}
-
+.faq-section h2{font-family:var(--serif);font-size:1.6rem;font-weight:900;color:var(--navy);margin-bottom:1.5rem;}
+.faq-item{border:1px solid var(--border);border-radius:10px;margin-bottom:0.75rem;overflow:hidden;}
+.faq-q{width:100%;background:none;border:none;padding:1.1rem 1.25rem;text-align:left;font-family:var(--sans);font-size:0.95rem;font-weight:600;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;}
+.faq-q:hover{background:var(--bg-soft);}
+.faq-arrow{color:var(--brand);font-size:1.1rem;transition:transform 0.2s;flex-shrink:0;}
+.faq-a{display:none;padding:0 1.25rem 1.1rem;font-size:0.9rem;color:var(--body);line-height:1.7;}
+.faq-item.open .faq-arrow{transform:rotate(180deg);}
+.faq-item.open .faq-a{display:block;}
+/* BLOG-SPECIFIC */
+.blog-filter-bar{display:flex;gap:0.5rem;flex-wrap:wrap;margin:1.5rem 0;}
+.blog-filter-pill{font-size:0.8rem;font-weight:600;color:var(--muted);padding:6px 14px;border-radius:20px;border:1.5px solid var(--border);cursor:pointer;transition:all 0.15s;text-decoration:none;}
+.blog-filter-pill:hover,.blog-filter-pill.active{color:var(--brand);border-color:var(--brand);background:var(--brand-light);}
+.blog-section{margin:2rem 0 3rem;}
+.blog-section-head{display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem;padding-bottom:0.75rem;border-bottom:2px solid var(--brand-light);}
+.blog-section-head h2{font-family:var(--serif);font-size:1.3rem;font-weight:900;color:var(--navy);}
+.blog-section-head .count{font-size:0.75rem;font-weight:700;color:var(--muted);background:var(--bg-soft);padding:3px 8px;border-radius:20px;}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.25rem;}
+.blog-card{border:1.5px solid var(--border);border-radius:var(--radius);background:#fff;overflow:hidden;transition:all 0.2s;display:flex;flex-direction:column;}
+.blog-card:hover{border-color:var(--brand);box-shadow:var(--shadow);transform:translateY(-2px);}
+.blog-card-body{padding:1.25rem;flex:1;}
+.blog-cat{font-size:0.68rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--brand);margin-bottom:0.5rem;}
+.blog-card h3{font-family:var(--serif);font-size:1.02rem;font-weight:700;color:var(--navy);line-height:1.35;margin-bottom:0.5rem;}
+.blog-card p{font-size:0.82rem;color:var(--muted);line-height:1.5;}
+.blog-card-footer{padding:0.75rem 1.25rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;}
+.blog-card-footer span{font-size:0.75rem;color:var(--muted);}
+.blog-card-footer a{font-size:0.8rem;color:var(--brand);font-weight:600;}
+/* COMPARE TABLE */
+.compare-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:0.88rem;}
+.compare-table th{background:var(--navy);color:#fff;padding:0.85rem 1rem;text-align:left;font-weight:600;}
+.compare-table th:first-child{border-radius:8px 0 0 0;}
+.compare-table th:last-child{border-radius:0 8px 0 0;}
+.compare-table td{padding:0.85rem 1rem;border-bottom:1px solid var(--border);vertical-align:middle;}
+.compare-table tr:hover td{background:var(--bg-soft);}
+.winner-badge{display:inline-block;background:var(--brand);color:#fff;font-size:0.65rem;font-weight:800;padding:2px 7px;border-radius:10px;margin-left:6px;vertical-align:middle;}
 /* NEWSLETTER */
-.newsletter-band{background:linear-gradient(135deg,var(--brand),var(--brand-dark));color:#fff;border-radius:16px;padding:2.5rem;text-align:center;margin:3rem 0;}
-.newsletter-band h2{font-family:var(--serif);font-size:1.6rem;font-weight:900;margin-bottom:0.6rem;}
-.newsletter-band p{font-size:0.95rem;opacity:0.9;margin-bottom:1.25rem;}
-.newsletter-band form{display:flex;gap:0.6rem;max-width:420px;margin:0 auto;flex-wrap:wrap;justify-content:center;}
-.newsletter-band input{flex:1;min-width:200px;padding:11px 16px;border:none;border-radius:8px;font-size:0.92rem;outline:none;}
-.newsletter-band button{background:#fff;color:var(--brand);font-weight:800;padding:11px 22px;border:none;border-radius:8px;cursor:pointer;font-size:0.92rem;}
-
-/* AFFILIATE DISCLOSURE */
-.disclosure-band{background:#fef9c3;border:1px solid #fde68a;border-radius:8px;padding:0.75rem 1rem;font-size:0.78rem;color:#78350f;margin-bottom:1.5rem;}
-
+.newsletter-box{background:var(--navy);border-radius:16px;padding:2.5rem;text-align:center;margin:2.5rem 0;}
+.newsletter-box h2{font-family:var(--serif);font-size:1.6rem;font-weight:900;color:#fff;margin-bottom:0.5rem;}
+.newsletter-box p{color:rgba(255,255,255,0.7);font-size:0.93rem;margin-bottom:1.5rem;}
+.newsletter-form{display:flex;gap:0.75rem;max-width:420px;margin:0 auto;}
+.newsletter-form input{flex:1;padding:0.7rem 1rem;border-radius:8px;border:none;font-size:0.9rem;}
+.newsletter-form button{background:var(--amazon);color:#fff;border:none;padding:0.7rem 1.25rem;border-radius:8px;font-weight:700;font-size:0.9rem;cursor:pointer;white-space:nowrap;}
 /* FOOTER */
-.site-footer{background:var(--navy);color:#9ca3af;margin-top:1rem;}
-.footer-main{max-width:1200px;margin:0 auto;padding:3rem 1.5rem;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2rem;}
-.footer-logo{font-family:var(--serif);font-size:1.4rem;font-weight:900;color:var(--brand);display:block;margin-bottom:0.75rem;}
-.footer-brand p{font-size:0.85rem;line-height:1.6;color:#9ca3af;max-width:280px;}
-.footer-col h4{color:#fff;font-size:0.82rem;font-weight:700;margin-bottom:1rem;text-transform:uppercase;letter-spacing:0.07em;}
+.site-footer{background:var(--navy);color:rgba(255,255,255,0.8);font-size:0.85rem;padding:3rem 0 0;}
+.footer-main{max-width:1200px;margin:0 auto;padding:0 1.5rem 2rem;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;}
+.footer-brand p{color:rgba(255,255,255,0.55);font-size:0.83rem;line-height:1.6;margin-top:0.5rem;}
+.footer-logo{font-family:var(--serif);font-size:1.3rem;font-weight:900;color:#fff;}
+.footer-col h4{color:#fff;font-size:0.8rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.85rem;}
 .footer-col ul{list-style:none;}
-.footer-col li{margin-bottom:0.55rem;}
-.footer-col a{font-size:0.83rem;color:#9ca3af;transition:color 0.15s;}
-.footer-col a:hover{color:#fff;}
-.footer-bottom{border-top:1px solid #374151;}
-.footer-bottom-inner{max-width:1200px;margin:0 auto;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:0.78rem;color:#6b7280;}
-.footer-disclosure{background:#1f2937;border-left:3px solid var(--amazon);padding:0.75rem 1.25rem;font-size:0.77rem;color:#9ca3af;max-width:1200px;margin:0 auto;}
-
-/* RESPONSIVE */
-@media(max-width:860px){
-  .product-card{grid-template-columns:auto 1fr;}.product-cta{display:none;}
-  .related-grid{grid-template-columns:1fr 1fr;}
+.footer-col ul li{margin-bottom:0.4rem;}
+.footer-col ul li a{color:rgba(255,255,255,0.6);font-size:0.84rem;transition:color 0.15s;}
+.footer-col ul li a:hover{color:#fff;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding:1.25rem 1.5rem;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;font-size:0.78rem;color:rgba(255,255,255,0.4);}
+.footer-disclosure{background:rgba(0,0,0,0.2);padding:1rem 1.5rem;text-align:center;font-size:0.75rem;color:rgba(255,255,255,0.4);}
+@media(max-width:768px){
+  .hub-hero{grid-template-columns:1fr;}.hub-hero-badge{display:none;}
+  .pc-header{grid-template-columns:auto 1fr;}.pc-cta-block{display:none;}
+  .pc-grid{grid-template-columns:1fr;}
   .footer-main{grid-template-columns:1fr 1fr;}
-}
-@media(max-width:640px){
-  .page-hero h1{font-size:1.65rem;}
-  .product-card{grid-template-columns:1fr;}
-  .product-rank-num{display:none;}
-  .pros-cons{grid-template-columns:1fr;}
-  .nav-links{display:none;}
-  .related-grid{grid-template-columns:1fr;}
-  .footer-main{grid-template-columns:1fr;}
+  .qp-grid{grid-template-columns:1fr 1fr;}
+  .newsletter-form{flex-direction:column;}
+  h1{font-size:1.8rem!important;}
 }
 </style>
-
-</head>
-<body>
-
-
+</head><body>
 <div class="top-bar">🔬 Evidence-Based Aesthetic Reviews · No Paid Rankings · <a href="/blog/">Read Our Guides →</a></div>
 <header class="site-header">
   <div class="nav-wrap">
@@ -190,8 +194,9 @@ img{max-width:100%;height:auto;}
       <a href="/skincare-serums/">Skincare</a>
       <a href="/at-home-laser-hair-removal/">Devices</a>
       <a href="/hair-loss-treatments/">Hair Loss</a>
+      <a href="/compare/">Compare</a>
       <a href="/best-at-home-aesthetic-devices/">Best Of</a>
-      <a href="/blog/">Blog</a>
+      <a href="/blog/" class="active">Blog</a>
       <a href="/#newsletter" class="nav-cta">Newsletter</a>
     </nav>
   </div>
@@ -209,462 +214,811 @@ img{max-width:100%;height:auto;}
     </div>
   </div>
 </header>
+<div class="page-wrap">
+<nav class="breadcrumb"><a href="/">Home</a> › Blog</nav>
 
-
-<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span class="breadcrumb-sep">›</span>Blog</nav>
-
-<div class="disclosure-band" style="max-width:1200px;margin:0.75rem auto 0;padding:0.6rem 1.5rem;background:#fef9c3;border:1px solid #fde68a;border-radius:8px;font-size:0.78rem;color:#78350f;">
-  <strong>Disclosure:</strong> We earn a commission from Amazon and other retailers when you use our links — at no extra cost to you. Rankings are never influenced by affiliate relationships.
+<div class="hub-hero">
+  <div class="hub-hero-text">
+    <span class="eyebrow">Evidence-Based Beauty</span>
+    <h1>Skincare & Aesthetic Guides</h1>
+    <p>Every article on this blog is written by Dr. Sarah Chen and reviewed against peer-reviewed clinical literature. No sponsored content, no affiliate-driven rankings — just the evidence, explained clearly.</p>
+    <div class="hub-hero-meta">
+      <span>📝 59 Articles</span>
+      <span>📅 Updated Weekly</span>
+      <span>🔬 Clinically Reviewed</span>
+    </div>
+  </div>
+  <div class="hub-hero-badge">
+    <div class="badge-num">59</div>
+    <div class="badge-label">Expert Articles</div>
+    <div style="margin-top:1rem;font-size:0.75rem;color:var(--muted);">11 topic categories</div>
+  </div>
 </div>
 
+<div class="blog-filter-bar">
+  <a href="/blog/" class="blog-filter-pill active">All Articles</a>
+  <a href="/skincare-serums/" class="blog-filter-pill">💧 Skincare</a>
+  <a href="/retinol-anti-aging/" class="blog-filter-pill">⚗️ Retinoids</a>
+  <a href="/sunscreen-spf/" class="blog-filter-pill">☀️ SPF</a>
+  <a href="/led-light-therapy-masks/" class="blog-filter-pill">💡 LED Devices</a>
+  <a href="/at-home-laser-hair-removal/" class="blog-filter-pill">✨ IPL &amp; Laser</a>
+  <a href="/microneedling-devices/" class="blog-filter-pill">🔬 Microneedling</a>
+  <a href="/collagen-supplements/" class="blog-filter-pill">🌸 Supplements</a>
+  <a href="/hair-loss-treatments/" class="blog-filter-pill">💊 Hair Loss</a>
+  <a href="/compare/" class="blog-filter-pill">⚖️ Compare</a>
+</div>
 
+<div class="blog-section">
+  <div class="blog-section-head">
+    <h2>💧 Skincare Routines</h2>
+    <span class="count">6 articles</span>
+  </div>
+  <div class="blog-grid">
+    <a href="/blog/skincare-routine-beginners-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Routine</div>
+        <h3>The Beginner's Complete Skincare Routine</h3>
+        <p>The exact order to apply every product, which ingredients to never combine, and how to build a routine that actually works.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/skincare-routine-beginners-guide/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/skin-cycling-routine/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Routine</div>
+        <h3>Skin Cycling: The 4-Night Rotation Dermatologists Recommend</h3>
+        <p>Alternate retinol, exfoliation, and recovery nights to maximize results while minimizing irritation.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>8 min read</span>
+        <a href="/blog/skin-cycling-routine/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/korean-skincare-routine/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">K-Beauty</div>
+        <h3>Korean Skincare Routine: The 10-Step System Simplified</h3>
+        <p>The K-beauty philosophy distilled — which steps actually matter and which are optional.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/korean-skincare-routine/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/double-cleansing-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Routine</div>
+        <h3>Double Cleansing: Does It Work and Who Needs It?</h3>
+        <p>Oil cleanser + water cleanser: the Japanese technique that removes sunscreen and makeup other cleansers miss.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>7 min read</span>
+        <a href="/blog/double-cleansing-guide/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/slugging-skincare-trend/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Routine</div>
+        <h3>Slugging: The Overnight Occlusive Trend That Actually Works</h3>
+        <p>Applying a thin layer of petroleum jelly as the last step sounds weird — the science says it's smart.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>6 min read</span>
+        <a href="/blog/slugging-skincare-trend/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/anti-aging-skincare-routine-40s/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Anti-Aging</div>
+        <h3>The Anti-Aging Skincare Routine for Your 40s</h3>
+        <p>What changes in your 40s, which ingredients matter most, and how to build a routine around the big three.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>11 min read</span>
+        <a href="/blog/anti-aging-skincare-routine-40s/">Read →</a>
+      </div>
+    </a>
+  </div>
+</div><div class="blog-section">
+  <div class="blog-section-head">
+    <h2>🧪 Active Ingredients</h2>
+    <span class="count">9 articles</span>
+  </div>
+  <div class="blog-grid">
+    <a href="/blog/hyaluronic-acid-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Hydration</div>
+        <h3>Hyaluronic Acid Guide: How It Works and How to Use It</h3>
+        <p>Three molecular weights, one key application rule — and why you need to apply it to damp skin.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>8 min read</span>
+        <a href="/blog/hyaluronic-acid-guide/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/niacinamide-benefits-how-to-use/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Ingredients</div>
+        <h3>Niacinamide: 8 Proven Benefits + How to Use It</h3>
+        <p>Pore minimizing, brightening, barrier repair — every documented benefit with the science behind it.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/niacinamide-benefits-how-to-use/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/ceramides-skin-barrier/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Ingredients</div>
+        <h3>Ceramides & Skin Barrier Repair: The Complete Guide</h3>
+        <p>A compromised skin barrier causes dryness, sensitivity, and breakouts. Here's how ceramides fix it.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>8 min read</span>
+        <a href="/blog/ceramides-skin-barrier/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/azelaic-acid-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Ingredients</div>
+        <h3>Azelaic Acid: The Gentle Active That Does Everything</h3>
+        <p>Brightening, acne, rosacea, hyperpigmentation — why dermatologists reach for azelaic acid first.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/azelaic-acid-guide/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/snail-mucin-benefits/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">K-Beauty</div>
+        <h3>Snail Mucin Benefits: What 96% Concentration Actually Does</h3>
+        <p>Allantoin, glycoproteins, and natural glycolic acid — the science behind skincare's most unusual ingredient.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>8 min read</span>
+        <a href="/blog/snail-mucin-benefits/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/snail-mucin-layering-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">K-Beauty</div>
+        <h3>How to Layer Snail Mucin with Retinol, Vitamin C & AHAs</h3>
+        <p>The complete compatibility guide for using snail mucin in every step of your routine.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/snail-mucin-layering-guide/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/niacinamide-vs-vitamin-c/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Ingredients</div>
+        <h3>Niacinamide vs Vitamin C: Can You Use Both?</h3>
+        <p>The old argument that they cancel each other out — and what the current research actually shows.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/niacinamide-vs-vitamin-c/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/chemical-exfoliant-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Exfoliation</div>
+        <h3>Chemical Exfoliants 101: AHA vs BHA vs PHA</h3>
+        <p>Which acid is right for your skin type, how to introduce them safely, and the over-exfoliation warning signs.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>12 min read</span>
+        <a href="/blog/chemical-exfoliant-guide/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/face-oil-dry-skin/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Moisturization</div>
+        <h3>Best Face Oils for Dry Skin (That Won't Clog Pores)</h3>
+        <p>Comedogenic ratings explained, the best non-clogging oils, and the right order to apply them.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/face-oil-dry-skin/">Read →</a>
+      </div>
+    </a>
+  </div>
+</div><div class="blog-section">
+  <div class="blog-section-head">
+    <h2>⚗️ Retinoids & Anti-Aging</h2>
+    <span class="count">5 articles</span>
+  </div>
+  <div class="blog-grid">
+    <a href="/blog/retinol-percentage-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Retinoids</div>
+        <h3>Retinol Percentages: Which Strength Is Right for You?</h3>
+        <p>From 0.025% to 1% — what each concentration does, who it's for, and how to move up safely.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/retinol-percentage-guide/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/bakuchiol-vs-retinol/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Comparison</div>
+        <h3>Bakuchiol vs Retinol: Which Is Better?</h3>
+        <p>Plant-based retinol alternative vs the real thing — what the clinical evidence honestly shows.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>8 min read</span>
+        <a href="/blog/bakuchiol-vs-retinol/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/tretinoin-vs-retinol-difference/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Retinoids</div>
+        <h3>Tretinoin vs Retinol: What's the Actual Difference?</h3>
+        <p>Prescription strength vs OTC — the mechanism, speed, and irritation differences explained clearly.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/tretinoin-vs-retinol-difference/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/tretinoin-before-after-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Retinoids</div>
+        <h3>Tretinoin Before and After: Week-by-Week Timeline</h3>
+        <p>A realistic guide through the purge, the adjustment, and when you'll actually see results.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>12 min read</span>
+        <a href="/blog/tretinoin-before-after-guide/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/peptides-vs-retinol/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Anti-Aging</div>
+        <h3>Peptides vs Retinol: Which Anti-Aging Ingredient Wins?</h3>
+        <p>Side effects, speed of results, and whether you need one or both — compared honestly.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/peptides-vs-retinol/">Read →</a>
+      </div>
+    </a>
+  </div>
+</div><div class="blog-section">
+  <div class="blog-section-head">
+    <h2>☀️ SPF, Exfoliation & Acne</h2>
+    <span class="count">5 articles</span>
+  </div>
+  <div class="blog-grid">
+    <a href="/blog/spf-30-vs-spf-50/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Sun Protection</div>
+        <h3>SPF 30 vs SPF 50: Which Do You Actually Need?</h3>
+        <p>The real difference between SPF numbers — and why reapplication beats chasing higher SPF every time.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>7 min read</span>
+        <a href="/blog/spf-30-vs-spf-50/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/glycolic-acid-toner-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Exfoliation</div>
+        <h3>Glycolic Acid Toner Guide: Best Products + How to Use Them</h3>
+        <p>The strongest AHA in skincare — concentration, pH, and the 5 best toners ranked by evidence.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/glycolic-acid-toner-guide/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/salicylic-acid-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Acne</div>
+        <h3>Salicylic Acid Guide: How BHA Clears Pores from the Inside</h3>
+        <p>Oil-soluble and pore-penetrating — why salicylic acid outperforms AHAs for acne and blackheads.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>8 min read</span>
+        <a href="/blog/salicylic-acid-guide/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/best-face-wash-acne/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Acne</div>
+        <h3>Best Face Wash for Acne-Prone Skin — 8 Tested & Ranked</h3>
+        <p>Salicylic acid, benzoyl peroxide, and gentle cleansers — the right cleanser for every acne type.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/best-face-wash-acne/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/best-toner-oily-skin/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Oily Skin</div>
+        <h3>Best Toner for Oily Skin in 2025 — Ranked</h3>
+        <p>Niacinamide, BHA, and astringent options that actually control oil without stripping the barrier.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>8 min read</span>
+        <a href="/blog/best-toner-oily-skin/">Read →</a>
+      </div>
+    </a>
+  </div>
+</div><div class="blog-section">
+  <div class="blog-section-head">
+    <h2>✨ Dark Spots & Brightening</h2>
+    <span class="count">4 articles</span>
+  </div>
+  <div class="blog-grid">
+    <a href="/blog/best-vitamin-c-serums-dark-spots/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Brightening</div>
+        <h3>Best Vitamin C Serums for Dark Spots — Tested & Ranked</h3>
+        <p>L-ascorbic acid percentage, stability, and real results: the top serums for hyperpigmentation compared.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/best-vitamin-c-serums-dark-spots/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/how-to-get-rid-of-dark-spots/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Brightening</div>
+        <h3>How to Get Rid of Dark Spots: The Complete Treatment Guide</h3>
+        <p>From vitamin C to azelaic acid to exfoliation — the evidence-ranked hierarchy for fading hyperpigmentation.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>11 min read</span>
+        <a href="/blog/how-to-get-rid-of-dark-spots/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/best-eye-cream-dark-circles/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Eye Care</div>
+        <h3>Best Eye Creams for Dark Circles — Ranked</h3>
+        <p>Caffeine, vitamin C, retinol — the ingredients that actually work and the creams that use them right.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/best-eye-cream-dark-circles/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/best-under-eye-patches/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Eye Care</div>
+        <h3>Best Under Eye Patches That Actually Work</h3>
+        <p>We tested 22 pairs — ranked by ingredient quality, de-puffing speed, and real hydration boost.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/best-under-eye-patches/">Read →</a>
+      </div>
+    </a>
+  </div>
+</div><div class="blog-section">
+  <div class="blog-section-head">
+    <h2>💧 Moisturizers & Hydration</h2>
+    <span class="count">4 articles</span>
+  </div>
+  <div class="blog-grid">
+    <a href="/blog/best-moisturizer-dry-skin/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Moisturization</div>
+        <h3>Best Moisturizer for Dry Skin — 10 Clinically-Backed Picks</h3>
+        <p>Ceramides, hyaluronic acid, and occlusives — what to look for and the top formulas ranked.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/best-moisturizer-dry-skin/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/best-body-lotion-dry-skin/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Body Care</div>
+        <h3>12 Best Body Lotions for Dry Skin — Dermatologist Tested</h3>
+        <p>We tested 32 body lotions to find the 12 that genuinely cure dryness, not just relieve it.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/best-body-lotion-dry-skin/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/best-drugstore-skincare/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Budget</div>
+        <h3>Best Drugstore Skincare Products of 2025 — 15 Worth Buying</h3>
+        <p>CeraVe, The Ordinary, Neutrogena — the drugstore products that outperform products costing 10x more.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>11 min read</span>
+        <a href="/blog/best-drugstore-skincare/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/the-ordinary-complete-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Budget</div>
+        <h3>The Ordinary Complete Guide: What to Buy and What to Skip</h3>
+        <p>Their catalog is overwhelming — we rank every The Ordinary product by evidence and value.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>12 min read</span>
+        <a href="/blog/the-ordinary-complete-guide/">Read →</a>
+      </div>
+    </a>
+  </div>
+</div><div class="blog-section">
+  <div class="blog-section-head">
+    <h2>🌸 Supplements & Peptides</h2>
+    <span class="count">4 articles</span>
+  </div>
+  <div class="blog-grid">
+    <a href="/blog/best-collagen-supplements-skin/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Supplements</div>
+        <h3>Best Collagen Supplements for Skin — RCT-Backed Rankings</h3>
+        <p>We rank only supplements with randomized controlled trial evidence behind them.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/best-collagen-supplements-skin/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/collagen-peptides-powder-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Supplements</div>
+        <h3>Collagen Peptides vs Powder: What's the Difference?</h3>
+        <p>The labels are confusing — we explain hydrolysis, molecular weight, and what actually matters.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/collagen-peptides-powder-guide/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/best-peptide-serums-anti-aging/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Anti-Aging</div>
+        <h3>Best Peptide Serums for Anti-Aging — Ranked by Evidence</h3>
+        <p>Matrixyl, argireline, palmitoyl tripeptide — which peptide types work and the serums that use them right.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/best-peptide-serums-anti-aging/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/best-peptide-serum-anti-aging/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Anti-Aging</div>
+        <h3>Best Peptide Serum: 2025 Rankings + Buying Guide</h3>
+        <p>Our comprehensive peptide serum rankings with deep-dive ingredient analysis.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/best-peptide-serum-anti-aging/">Read →</a>
+      </div>
+    </a>
+  </div>
+</div><div class="blog-section">
+  <div class="blog-section-head">
+    <h2>💡 LED, Microcurrent & RF Devices</h2>
+    <span class="count">6 articles</span>
+  </div>
+  <div class="blog-grid">
+    <a href="/blog/led-light-therapy-masks-work/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Devices</div>
+        <h3>Do LED Masks Actually Work? The Clinical Evidence Reviewed</h3>
+        <p>We reviewed 14 RCTs on LED photobiomodulation — here's what the research honestly shows.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>11 min read</span>
+        <a href="/blog/led-light-therapy-masks-work/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/best-led-mask-for-acne/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Devices</div>
+        <h3>Best LED Masks for Acne — Ranked by Blue Light Power</h3>
+        <p>Which devices actually deliver enough blue light to kill acne bacteria? Our ranked list.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/best-led-mask-for-acne/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/red-light-therapy-face-benefits/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Devices</div>
+        <h3>Red Light Therapy Benefits for Face — What Science Says</h3>
+        <p>From collagen synthesis to wound healing — the peer-reviewed evidence for facial red light.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/red-light-therapy-face-benefits/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/at-home-rf-devices-skin-tightening/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Devices</div>
+        <h3>Best At-Home RF Devices for Skin Tightening — Ranked</h3>
+        <p>Radiofrequency skin tightening at home: which devices work, which don't, and why.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>11 min read</span>
+        <a href="/blog/at-home-rf-devices-skin-tightening/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/nuface-microcurrent-review/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Devices</div>
+        <h3>NuFACE Trinity Review: Does Microcurrent Facial Toning Work?</h3>
+        <p>We tested NuFACE for 90 days — the honest results, the caveats, and who it's best for.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/nuface-microcurrent-review/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/gua-sha-face-roller-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Tools</div>
+        <h3>Gua Sha & Face Roller Guide: What Actually Works</h3>
+        <p>Lymphatic drainage, depuffing, or beauty theater? The evidence-based verdict on facial tools.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>8 min read</span>
+        <a href="/blog/gua-sha-face-roller-guide/">Read →</a>
+      </div>
+    </a>
+  </div>
+</div><div class="blog-section">
+  <div class="blog-section-head">
+    <h2>✨ IPL, Laser & Microneedling</h2>
+    <span class="count">8 articles</span>
+  </div>
+  <div class="blog-grid">
+    <a href="/blog/ipl-skin-types-complete-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">IPL & Laser</div>
+        <h3>IPL and Skin Types: The Complete Fitzpatrick Safety Guide</h3>
+        <p>IPL doesn't work on all skin tones — the full guide to which types are safe and which devices to use.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/ipl-skin-types-complete-guide/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/how-many-ipl-sessions/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">IPL & Laser</div>
+        <h3>How Many IPL Sessions Do You Actually Need?</h3>
+        <p>The realistic timeline for IPL hair removal — why 6–10 sessions is normal and what affects results.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>8 min read</span>
+        <a href="/blog/how-many-ipl-sessions/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/ipl-vs-laser-hair-removal-home/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Comparison</div>
+        <h3>IPL vs Laser Hair Removal at Home: What's the Difference?</h3>
+        <p>IPL scatters light; laser focuses it. The practical implications for results, safety, and skin tone.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/ipl-vs-laser-hair-removal-home/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/best-ipl-devices-dark-skin/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">IPL & Laser</div>
+        <h3>Best IPL Devices for Darker Skin Tones — Safe Options Ranked</h3>
+        <p>Most IPL devices aren't safe for Fitzpatrick IV–VI. These are the exceptions that actually work.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/best-ipl-devices-dark-skin/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/at-home-microneedling-safe/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Devices</div>
+        <h3>Is At-Home Microneedling Safe? What Dermatologists Actually Say</h3>
+        <p>The honest risk-benefit analysis — which depths are safe at home and which require a professional.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/at-home-microneedling-safe/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/dermaroller-vs-microneedling-pen/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Comparison</div>
+        <h3>Dermaroller vs Microneedling Pen: Which Is Better?</h3>
+        <p>The clinical differences in needle motion, channel pattern, and results — and which is safer at home.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/dermaroller-vs-microneedling-pen/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/microneedling-aftercare-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Devices</div>
+        <h3>Microneedling Aftercare: The 72-Hour Protocol</h3>
+        <p>What to apply, what to avoid, and how to maximize your skin's repair window after microneedling.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>8 min read</span>
+        <a href="/blog/microneedling-aftercare-guide/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/at-home-chemical-peel-guide/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Exfoliation</div>
+        <h3>At-Home Chemical Peel Guide: What's Safe Without a License?</h3>
+        <p>Glycolic, lactic, and TCA peels at home — the concentrations that work and the ones that scar.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>11 min read</span>
+        <a href="/blog/at-home-chemical-peel-guide/">Read →</a>
+      </div>
+    </a>
+  </div>
+</div><div class="blog-section">
+  <div class="blog-section-head">
+    <h2>💊 Hair Loss Treatments</h2>
+    <span class="count">3 articles</span>
+  </div>
+  <div class="blog-grid">
+    <a href="/blog/hims-vs-keeps-hair-loss/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Hair Loss</div>
+        <h3>Hims vs Keeps: Which Hair Loss Service Is Better?</h3>
+        <p>We compared both platforms on price, prescribing practices, product quality, and customer experience.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/hims-vs-keeps-hair-loss/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/minoxidil-for-women-hair-loss/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Hair Loss</div>
+        <h3>Minoxidil for Women: Does It Work for Female Hair Loss?</h3>
+        <p>The evidence for topical and oral minoxidil in women — including the off-label oral option derms prefer.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/minoxidil-for-women-hair-loss/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/hims-vs-hers-comparison/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Comparison</div>
+        <h3>Hims vs Hers: Full Comparison for Skincare and Hair Loss</h3>
+        <p>The same parent company — but are the products, pricing, and prescribing different? We compared.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/hims-vs-hers-comparison/">Read →</a>
+      </div>
+    </a>
+  </div>
+</div><div class="blog-section">
+  <div class="blog-section-head">
+    <h2>⚖️ Comparisons & Reviews</h2>
+    <span class="count">5 articles</span>
+  </div>
+  <div class="blog-grid">
+    <a href="/blog/curology-vs-hers-skincare/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Compare</div>
+        <h3>Curology vs Hers: Which Prescription Skincare is Better?</h3>
+        <p>Both prescribe tretinoin online — the differences in price, formula flexibility, and provider quality.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/curology-vs-hers-skincare/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/snow-vs-crest-whitestrips/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Compare</div>
+        <h3>Snow vs Crest Whitestrips: Which Whitening Actually Works?</h3>
+        <p>LED accelerator vs hydrogen peroxide strips — what the clinical evidence says about each approach.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>8 min read</span>
+        <a href="/blog/snow-vs-crest-whitestrips/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/snow-vs-hismile-teeth-whitening/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Compare</div>
+        <h3>Snow vs HiSmile: Two Premium Whiteners Compared Honestly</h3>
+        <p>Both target the Instagram-savvy buyer — but which one delivers real whitening results?</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>8 min read</span>
+        <a href="/blog/snow-vs-hismile-teeth-whitening/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/best-teeth-whitening-sensitive/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Teeth</div>
+        <h3>Best Teeth Whitening for Sensitive Teeth — Safe Options Ranked</h3>
+        <p>How to get whiter teeth without the pain — the gentlest formulas ranked for sensitive enamel.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>9 min read</span>
+        <a href="/blog/best-teeth-whitening-sensitive/">Read →</a>
+      </div>
+    </a>
+    <a href="/blog/find-good-med-spa/" class="blog-card">
+      <div class="blog-card-body">
+        <div class="blog-cat">Compare</div>
+        <h3>How to Find a Good Med Spa (Without Getting Burned)</h3>
+        <p>The red flags, the certifications to look for, and questions to ask before any aesthetic procedure.</p>
+      </div>
+      <div class="blog-card-footer">
+        <span>10 min read</span>
+        <a href="/blog/find-good-med-spa/">Read →</a>
+      </div>
+    </a>
+  </div>
+</div>
 
-<main>
-<div class="page-header">
-<h1>AesteticAdvice Blog</h1>
-<p>Expert insights on aesthetic treatments, skincare, and beauty wellness</p>
+<div class="newsletter-box" id="newsletter">
+  <h2>Get Weekly Skincare Science</h2>
+  <p>New evidence-based guides every week. No fluff, no sponsored posts — just the science that makes your routine work.</p>
+  <form class="newsletter-form" action="https://formspree.io/f/xkovevqk" method="POST">
+    <input type="email" name="email" placeholder="your@email.com" required>
+    <button type="submit">Subscribe →</button>
+  </form>
 </div>
-<div class="blog-grid">
-<div class="blog-card">
-<h3><a href="/blog/best-under-eye-patches/">Best Under Eye Patches That Actually Work</a></h3>
-<p class="meta">Eye Care · 10 min read</p>
-<p>We tested 22 pairs and ranked the 9 best under eye patches for puffiness, dark circles, and fine lines.</p>
-<a class="read-more" href="/blog/best-under-eye-patches/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/niacinamide-vs-vitamin-c/">Niacinamide vs Vitamin C: Can You Use Both?</a></h3>
-<p class="meta">Ingredients · 10 min read</p>
-<p>The niacinamide and vitamin C debate settled. Learn whether you can layer them and which is better for your goals.</p>
-<a class="read-more" href="/blog/niacinamide-vs-vitamin-c/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/chemical-exfoliant-guide/">Chemical Exfoliants 101: AHA vs BHA vs PHA</a></h3>
-<p class="meta">Exfoliation · 12 min read</p>
-<p>AHA, BHA, or PHA — which chemical exfoliant is right for your skin type? The complete dermatologist-backed guide.</p>
-<a class="read-more" href="/blog/chemical-exfoliant-guide/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/face-oil-dry-skin/">Best Face Oils for Dry Skin (That Won't Clog Pores)</a></h3>
-<p class="meta">Moisturization · 9 min read</p>
-<p>The best face oils for dry skin ranked by comedogenic rating, absorption speed, and clinical effectiveness.</p>
-<a class="read-more" href="/blog/face-oil-dry-skin/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/best-body-lotion-dry-skin/">12 Best Body Lotions for Dry Skin</a></h3>
-<p class="meta">Body Care · 10 min read</p>
-<p>We tested 32 body lotions to find the 12 that genuinely cure dry skin — not just temporarily relieve it.</p>
-<a class="read-more" href="/blog/best-body-lotion-dry-skin/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/peptides-vs-retinol/">Peptides vs Retinol: Which Is Right for You?</a></h3>
-<p class="meta">Anti-Aging · 10 min read</p>
-<p>Both fight aging through different pathways. Learn which suits your skin type and goals — or whether you need both.</p>
-<a class="read-more" href="/blog/peptides-vs-retinol/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/snail-mucin-layering-guide/">How to Use Snail Mucin: The Complete Layering Guide</a></h3>
-<p class="meta">K-Beauty · 9 min read</p>
-<p>How to layer snail mucin with retinol, vitamin C, niacinamide, and AHAs for maximum results.</p>
-<a class="read-more" href="/blog/snail-mucin-layering-guide/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/best-self-tanner-face/">7 Best Self Tanners for Face (No Orange, No Streaks)</a></h3>
-<p class="meta">Glow · 8 min read</p>
-<p>The best self tanners for the face that look natural and won't clog pores — ranked for every skin tone.</p>
-<a class="read-more" href="/blog/best-self-tanner-face/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/collagen-peptides-powder-guide/">Collagen Peptides vs Powder: What's the Difference?</a></h3>
-<p class="meta">Supplements · 10 min read</p>
-<p>Are collagen peptides and collagen powder the same thing? We explain the science and the best products.</p>
-<a class="read-more" href="/blog/collagen-peptides-powder-guide/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/tretinoin-before-after-guide/">Tretinoin Before and After: Week-by-Week Timeline</a></h3>
-<p class="meta">Retinoids · 12 min read</p>
-<p>A realistic week-by-week guide — what to expect, how to manage the purge, and when you'll see real results.</p>
-<a class="read-more" href="/blog/tretinoin-before-after-guide/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/hims-vs-keeps-hair-loss/">Hims vs Keeps: Which Hair Loss Treatment Actually Works in 2026?</a></h3>
-<p class="meta">Published: 2026-03-05 • 8 min read</p>
-<p>Detailed comparison of Hims and Keeps for hair loss treatment. See pricing, active ingredients, subscription flexibility, and real results.</p>
-<a class="read-more" href="/blog/hims-vs-keeps-hair-loss/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/best-ipl-devices-dark-skin/">Best IPL Devices for Dark Skin Tones in 2026 (What Actually Works)</a></h3>
-<p class="meta">Published: 2026-03-04 • 9 min read</p>
-<p>Safe IPL devices for dark skin. Most IPL devices don't work on dark skin—here's what actually does and why.</p>
-<a class="read-more" href="/blog/best-ipl-devices-dark-skin/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/curology-vs-hers-skincare/">Curology vs Hers Skincare: Which Prescription Service Is Worth It?</a></h3>
-<p class="meta">Published: 2026-03-03 • 8 min read</p>
-<p>Curology vs Hers comparison. Pricing, ingredients, consultation process, and which is better for acne, aging, and hyperpigmentation.</p>
-<a class="read-more" href="/blog/curology-vs-hers-skincare/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/how-many-ipl-sessions/">How Many IPL Sessions Does It Actually Take? (Honest Timeline)</a></h3>
-<p class="meta">Published: 2026-03-02 • 8 min read</p>
-<p>Real IPL results timeline. Most people expect 2-3 sessions but need 6-12. Here's what to actually expect by body area and skin type.</p>
-<a class="read-more" href="/blog/how-many-ipl-sessions/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/at-home-microneedling-safe/">At-Home Microneedling: Is It Actually Safe? What You Need to Know</a></h3>
-<p class="meta">Published: 2026-03-01 • 8 min read</p>
-<p>Is at-home microneedling safe? Yes—if done correctly. Needle depth, sterilization, frequency, and what to avoid.</p>
-<a class="read-more" href="/blog/at-home-microneedling-safe/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/led-light-therapy-masks-work/">Do LED Light Therapy Masks Actually Work? The Science Explained</a></h3>
-<p class="meta">Published: 2026-02-28 • 9 min read</p>
-<p>LED light therapy is scientifically proven. Red light builds collagen, blue light kills acne bacteria. We break down what works and what doesn't.</p>
-<a class="read-more" href="/blog/led-light-therapy-masks-work/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/best-teeth-whitening-sensitive/">Best Teeth Whitening for Sensitive Teeth in 2026 (That Actually Works)</a></h3>
-<p class="meta">Published: 2026-02-27 • 8 min read</p>
-<p>Teeth whitening formulas designed for sensitive teeth. Lower peroxide concentrations, potassium nitrate, and which brands actually work without pain.</p>
-<a class="read-more" href="/blog/best-teeth-whitening-sensitive/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/hims-vs-hers-comparison/">Hims vs Hers: Same Company, Different Products — Which Is Right for You?</a></h3>
-<p class="meta">Published: 2026-02-26 • 8 min read</p>
-<p>Hims and Hers are sister companies under the same parent. But they serve different markets. Here's how they compare.</p>
-<a class="read-more" href="/blog/hims-vs-hers-comparison/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/find-good-med-spa/">How to Find a Good Med Spa Near You (And 5 Red Flags to Avoid)</a></h3>
-<p class="meta">Published: 2026-02-25 • 8 min read</p>
-<p>What makes a legitimate med spa vs a dangerous one. Licensed medical directors, injector credentials, and how to spot red flags.</p>
-<a class="read-more" href="/blog/find-good-med-spa/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/snow-vs-crest-whitestrips/">Snow Teeth Whitening vs Crest Whitestrips: Which Is Actually Worth It?</a></h3>
-<p class="meta">Published: 2026-02-24 • 8 min read</p>
-<p>Snow is premium ($149) with an LED accelerator. Crest is cheap ($40) with decades of proof. Which one actually whitens your teeth?</p>
-<a class="read-more" href="/blog/snow-vs-crest-whitestrips/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/red-light-therapy-face-benefits/">Red Light Therapy for Face: Does It Actually Work? (2026 Review)</a></h3>
-<p class="meta">Published: 2026-03-07 • 9 min read</p>
-<p>Red light therapy promises younger skin, less acne, and faster healing. We break down the science, best devices, and what to realistically expect.</p>
-<a class="read-more" href="/blog/red-light-therapy-face-benefits/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/dermaroller-vs-microneedling-pen/">Dermaroller vs Microneedling Pen: Which Actually Works Better at Home?</a></h3>
-<p class="meta">Published: 2026-03-06 • 8 min read</p>
-<p>Dermarollers cost $15. Microneedling pens cost $150+. We compare results, safety, and best practices so you know exactly which to buy.</p>
-<a class="read-more" href="/blog/dermaroller-vs-microneedling-pen/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/ipl-vs-laser-hair-removal-home/">IPL vs Laser Hair Removal at Home: Which Removes Hair Permanently?</a></h3>
-<p class="meta">Published: 2026-03-04 • 9 min read</p>
-<p>IPL and laser both claim permanent hair removal. We explain the real difference, which works on your skin tone, and the best at-home devices for 2026.</p>
-<a class="read-more" href="/blog/ipl-vs-laser-hair-removal-home/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/minoxidil-for-women-hair-loss/">Minoxidil for Women: Does It Work for Female Hair Loss? (Honest Review)</a></h3>
-<p class="meta">Published: 2026-03-03 • 8 min read</p>
-<p>Minoxidil is FDA-approved for female pattern hair loss. We break down how it works, the right dosage, side effects, and how it compares to Hers and Nutrafol.</p>
-<a class="read-more" href="/blog/minoxidil-for-women-hair-loss/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/at-home-chemical-peel-guide/">At-Home Chemical Peels: The Complete Safety Guide (AHA, BHA, TCA)</a></h3>
-<p class="meta">Published: 2026-03-02 • 10 min read</p>
-<p>Chemical peels can transform your skin — if done right. We break down AHA vs BHA vs TCA peels, correct percentages, and how to avoid burns.</p>
-<a class="read-more" href="/blog/at-home-chemical-peel-guide/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/nuface-microcurrent-review/">NuFACE Review 2026: Does Microcurrent Actually Lift Your Face?</a></h3>
-<p class="meta">Published: 2026-03-01 • 8 min read</p>
-<p>NuFACE claims to lift and tone facial muscles with microcurrent. We review the science, compare Trinity vs Mini, and tell you if the results are real.</p>
-<a class="read-more" href="/blog/nuface-microcurrent-review/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/best-peptide-serum-anti-aging/">Best Peptide Serums for Anti-Aging in 2026 (Ranked by Evidence)</a></h3>
-<p class="meta">Published: 2026-02-28 • 7 min read</p>
-<p>Peptides are one of the most evidence-backed anti-aging ingredients available without a prescription. We rank the best serums by ingredient quality and results.</p>
-<a class="read-more" href="/blog/best-peptide-serum-anti-aging/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/tretinoin-vs-retinol-difference/">Tretinoin vs Retinol: What's the Real Difference? (And Do You Need a Prescription?)</a></h3>
-<p class="meta">Published: 2026-02-26 • 9 min read</p>
-<p>Tretinoin requires a prescription and is 20x more powerful than retinol. We break down who needs which and where to get tretinoin without insurance.</p>
-<a class="read-more" href="/blog/tretinoin-vs-retinol-difference/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/best-led-mask-for-acne/">Best LED Masks for Acne in 2026: Blue Light, Red Light, or Both?</a></h3>
-<p class="meta">Published: 2026-02-24 • 8 min read</p>
-<p>LED masks use blue and red light to kill acne bacteria and reduce inflammation. We compare the top masks for acne treatment and explain the science.</p>
-<a class="read-more" href="/blog/best-led-mask-for-acne/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/snow-vs-hismile-teeth-whitening/">Snow vs HiSmile Whitening: Which Actually Whitens Your Teeth? (2026)</a></h3>
-<p class="meta">Published: 2026-02-22 • 7 min read</p>
-<p>Snow and HiSmile both claim to whiten teeth by several shades. We compare the active ingredients, application methods, sensitivity, and real results.</p>
-<a class="read-more" href="/blog/snow-vs-hismile-teeth-whitening/">Read Article →</a>
-</div>
-<!-- Batch 3 posts -->
-<div class="blog-card">
-<h3><a href="/blog/ipl-skin-types-complete-guide/">IPL &amp; Skin Types: The Complete Fitzpatrick Scale Guide for At-Home Devices</a></h3>
-<p class="meta">Published: 2026-03-20 • 10 min read</p>
-<p>IPL doesn't work on all skin tones. This guide explains the Fitzpatrick scale, which types are safe for at-home IPL, and which devices to use.</p>
-<a class="read-more" href="/blog/ipl-skin-types-complete-guide/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/skincare-routine-beginners-guide/">The Beginner's Complete Skincare Routine Guide (What to Use and In What Order)</a></h3>
-<p class="meta">Published: 2026-03-20 • 9 min read</p>
-<p>Building a skincare routine from scratch. The correct order for cleanser, toner, serum, moisturizer, and SPF—plus product picks at every budget.</p>
-<a class="read-more" href="/blog/skincare-routine-beginners-guide/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/best-collagen-supplements-skin/">Best Collagen Supplements for Skin in 2026 (Ranked by Clinical Evidence)</a></h3>
-<p class="meta">Published: 2026-03-20 • 8 min read</p>
-<p>Hydrolyzed collagen peptides are one of the most clinically studied supplements for skin elasticity. We rank the top products by evidence, dose, and value.</p>
-<a class="read-more" href="/blog/best-collagen-supplements-skin/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/gua-sha-face-roller-guide/">Gua Sha vs Face Roller: What's the Difference and Do They Actually Work?</a></h3>
-<p class="meta">Published: 2026-03-20 • 8 min read</p>
-<p>Gua sha sculpts and depuffs; face rollers massage and cool. We explain the real differences, proper techniques, and which tools are worth buying.</p>
-<a class="read-more" href="/blog/gua-sha-face-roller-guide/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/best-vitamin-c-serums-dark-spots/">Best Vitamin C Serums for Dark Spots in 2026 (Tested &amp; Ranked)</a></h3>
-<p class="meta">Published: 2026-03-20 • 9 min read</p>
-<p>Vitamin C is the gold standard for fading hyperpigmentation. We compare L-ascorbic acid percentages, formulation stability, and the 5 best serums for dark spots.</p>
-<a class="read-more" href="/blog/best-vitamin-c-serums-dark-spots/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/hyaluronic-acid-guide/">Hyaluronic Acid: The Complete Guide to Molecular Weights &amp; How to Use It</a></h3>
-<p class="meta">Published: 2026-03-20 • 8 min read</p>
-<p>Not all hyaluronic acid is equal. Multi-weight HA hydrates at three different skin depths. We explain the science and rank the best serums.</p>
-<a class="read-more" href="/blog/hyaluronic-acid-guide/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/at-home-rf-devices-skin-tightening/">At-Home RF Devices for Skin Tightening: Do They Actually Work? (2026)</a></h3>
-<p class="meta">Published: 2026-03-20 • 9 min read</p>
-<p>Radiofrequency heats the dermis to stimulate collagen remodeling. We test which at-home RF devices reach clinical temperatures—and which are just warm.</p>
-<a class="read-more" href="/blog/at-home-rf-devices-skin-tightening/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/niacinamide-benefits-how-to-use/">Niacinamide: 8 Proven Benefits + How to Add It to Your Routine</a></h3>
-<p class="meta">Published: 2026-03-20 • 7 min read</p>
-<p>Niacinamide is one of the most versatile skincare ingredients—pores, brightness, barrier repair. We break down the correct concentrations and best products.</p>
-<a class="read-more" href="/blog/niacinamide-benefits-how-to-use/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/microneedling-aftercare-guide/">Microneedling Aftercare: The 72-Hour Protocol to Maximize Results</a></h3>
-<p class="meta">Published: 2026-03-20 • 8 min read</p>
-<p>What you do in the 72 hours after microneedling determines your results. Here's the exact aftercare protocol, products to use, and what to absolutely avoid.</p>
-<a class="read-more" href="/blog/microneedling-aftercare-guide/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/best-peptide-serums-anti-aging/">Best Peptide Serums for Anti-Aging in 2026: 5 Top Picks Ranked</a></h3>
-<p class="meta">Published: 2026-03-20 • 8 min read</p>
-<p>Peptides signal your skin to produce more collagen. We rank the 5 best peptide serums by peptide concentration, additional actives, and clinical evidence.</p>
-<a class="read-more" href="/blog/best-peptide-serums-anti-aging/">Read Article →</a>
-</div>
-</div>
-<!-- Batch 4 posts -->
-<div class="blog-card">
-<h3><a href="/blog/skin-cycling-routine/">Skin Cycling: The Viral 4-Night Routine Dermatologists Actually Recommend</a></h3>
-<p class="meta">Published: 2026-03-22 • 9 min read</p>
-<p>The skin cycling method rotates retinol, exfoliation, and recovery nights to maximize results while minimizing irritation. Here's the exact protocol.</p>
-<a class="read-more" href="/blog/skin-cycling-routine/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/bakuchiol-vs-retinol/">Bakuchiol vs Retinol: Is the Plant-Based Alternative Actually Worth It?</a></h3>
-<p class="meta">Published: 2026-03-22 • 8 min read</p>
-<p>Bakuchiol is marketed as a natural retinol alternative. We compare the clinical evidence, irritation profiles, and whether it can truly replace prescription retinoids.</p>
-<a class="read-more" href="/blog/bakuchiol-vs-retinol/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/ceramides-skin-barrier/">Ceramides &amp; Skin Barrier Repair: The Complete Science-Backed Guide</a></h3>
-<p class="meta">Published: 2026-03-22 • 9 min read</p>
-<p>A compromised skin barrier causes dryness, sensitivity, and breakouts. Ceramides are the key repair ingredient. We explain how they work and rank the best products.</p>
-<a class="read-more" href="/blog/ceramides-skin-barrier/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/azelaic-acid-guide/">Azelaic Acid: The Underrated Ingredient for Rosacea, Acne &amp; Dark Spots</a></h3>
-<p class="meta">Published: 2026-03-22 • 8 min read</p>
-<p>Azelaic acid is FDA-approved for rosacea and acne, yet remains one of skincare's best-kept secrets. We break down concentrations, benefits, and top product picks.</p>
-<a class="read-more" href="/blog/azelaic-acid-guide/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/snail-mucin-benefits/">Snail Mucin Benefits: Why This K-Beauty Ingredient Is Worth the Hype</a></h3>
-<p class="meta">Published: 2026-03-22 • 7 min read</p>
-<p>Snail secretion filtrate has earned cult status in Korean skincare. We explain the evidence behind snail mucin for hydration, wound healing, and anti-aging.</p>
-<a class="read-more" href="/blog/snail-mucin-benefits/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/best-eye-cream-dark-circles/">Best Eye Creams for Dark Circles in 2026: 5 Products That Actually Work</a></h3>
-<p class="meta">Published: 2026-03-22 • 8 min read</p>
-<p>Dark circles have different causes—pigmentation, vascularity, hollowness. We match the 5 best eye creams to each cause type with clinical ingredient breakdowns.</p>
-<a class="read-more" href="/blog/best-eye-cream-dark-circles/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/glycolic-acid-toner-guide/">Glycolic Acid Toners: Complete Guide to AHA Exfoliation for Brighter Skin</a></h3>
-<p class="meta">Published: 2026-03-22 • 8 min read</p>
-<p>Glycolic acid is the most studied AHA for improving skin texture, tone, and radiance. We explain percentages, frequency, and rank the best toners on the market.</p>
-<a class="read-more" href="/blog/glycolic-acid-toner-guide/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/slugging-skincare-trend/">Slugging: The Viral Vaseline Skincare Hack That Dermatologists Approve</a></h3>
-<p class="meta">Published: 2026-03-22 • 7 min read</p>
-<p>Slugging seals moisture overnight with an occlusive layer. We explain why it works, who it's for, how to do it correctly, and which occlusives to use.</p>
-<a class="read-more" href="/blog/slugging-skincare-trend/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/double-cleansing-guide/">Double Cleansing: The Korean Skincare Method for Truly Clean Skin</a></h3>
-<p class="meta">Published: 2026-03-22 • 8 min read</p>
-<p>Double cleansing removes sunscreen, makeup, and impurities that water-based cleansers can't reach. We explain the two-step method and rank the best oil cleansers.</p>
-<a class="read-more" href="/blog/double-cleansing-guide/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/best-moisturizer-dry-skin/">Best Moisturizers for Dry Skin in 2026: 7 Dermatologist-Approved Picks</a></h3>
-<p class="meta">Published: 2026-03-22 • 9 min read</p>
-<p>Dry skin needs humectants, emollients, and occlusives working together. We rank 7 moisturizers by ingredient quality, texture, and value for all budgets.</p>
-<a class="read-more" href="/blog/best-moisturizer-dry-skin/">Read Article →</a>
-<!-- Batch 5 posts -->
-<div class="blog-card">
-<h3><a href="/blog/best-face-wash-acne/">Best Face Wash for Acne in 2026: 7 Dermatologist-Approved Picks</a></h3>
-<p class="meta">Published: 2026-03-22 • 8 min read</p>
-<p>The 7 best face washes for acne-prone skin — ranked by active ingredients, gentleness, and clinical evidence. Includes options for sensitive, oily, and dry acne skin.</p>
-<a class="read-more" href="/blog/best-face-wash-acne/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/salicylic-acid-guide/">Salicylic Acid for Acne: The Complete Guide to BHA Exfoliation</a></h3>
-<p class="meta">Published: 2026-03-22 • 8 min read</p>
-<p>How salicylic acid works, what percentage to use, how to layer it, and the best BHA products ranked by clinical evidence.</p>
-<a class="read-more" href="/blog/salicylic-acid-guide/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/retinol-percentage-guide/">Retinol Percentages Explained: What Strength Should You Start With?</a></h3>
-<p class="meta">Published: 2026-03-22 • 7 min read</p>
-<p>What 0.025%, 0.1%, 0.3%, 0.5%, and 1% retinol actually do — and exactly which concentration to start with to avoid the retinization disaster most people experience.</p>
-<a class="read-more" href="/blog/retinol-percentage-guide/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/best-drugstore-skincare/">Best Drugstore Skincare of 2026: 12 Products That Outperform Luxury</a></h3>
-<p class="meta">Published: 2026-03-22 • 9 min read</p>
-<p>12 drugstore products from CVS, Target, and Amazon that match or beat products costing 5x more — ranked by ingredients and clinical evidence.</p>
-<a class="read-more" href="/blog/best-drugstore-skincare/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/korean-skincare-routine/">The Korean Skincare Routine: What the 10-Step Method Actually Involves</a></h3>
-<p class="meta">Published: 2026-03-22 • 8 min read</p>
-<p>A complete guide to the Korean 10-step routine — which steps are essential, which are optional, and the best K-beauty products for each step ranked by effectiveness.</p>
-<a class="read-more" href="/blog/korean-skincare-routine/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/spf-30-vs-spf-50/">SPF 30 vs SPF 50: Is Higher SPF Actually Worth It?</a></h3>
-<p class="meta">Published: 2026-03-22 • 6 min read</p>
-<p>The real math behind SPF numbers — what 96.7% vs 98% UVB protection means in practice, and when SPF 50 genuinely matters over SPF 30.</p>
-<a class="read-more" href="/blog/spf-30-vs-spf-50/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/anti-aging-skincare-routine-40s/">Anti-Aging Skincare Routine for Your 40s: What Actually Works</a></h3>
-<p class="meta">Published: 2026-03-22 • 9 min read</p>
-<p>A dermatologist-recommended routine for your 40s — the ingredients, products, and strategies that address volume loss, fine lines, hyperpigmentation, and laxity.</p>
-<a class="read-more" href="/blog/anti-aging-skincare-routine-40s/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/how-to-get-rid-of-dark-spots/">How to Get Rid of Dark Spots: A Dermatologist's Complete Guide</a></h3>
-<p class="meta">Published: 2026-03-22 • 9 min read</p>
-<p>The ingredients that actually fade hyperpigmentation, dark spots, and melasma — with realistic timelines and top product picks ranked by clinical evidence.</p>
-<a class="read-more" href="/blog/how-to-get-rid-of-dark-spots/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/best-toner-oily-skin/">Best Toners for Oily Skin in 2026: 6 Options That Control Shine</a></h3>
-<p class="meta">Published: 2026-03-22 • 7 min read</p>
-<p>Modern toners for oily skin go beyond astringents — the 6 best options using BHA, niacinamide, and AHAs to genuinely regulate sebum and minimize pores.</p>
-<a class="read-more" href="/blog/best-toner-oily-skin/">Read Article →</a>
-</div>
-<div class="blog-card">
-<h3><a href="/blog/the-ordinary-complete-guide/">The Ordinary: Complete Guide to Every Product and How to Layer Them</a></h3>
-<p class="meta">Published: 2026-03-22 • 10 min read</p>
-<p>Which Ordinary products work, which to skip, the correct layering order, and complete starter routines for every skin type — without the confusion.</p>
-<a class="read-more" href="/blog/the-ordinary-complete-guide/">Read Article →</a>
-</div>
-</div>
-</div>
-</main>
 
-<!-- Email Capture Widget - AesteticAdvice -->
-<div id="capture-popup" style="position:fixed;bottom:24px;right:24px;z-index:1000;max-width:320px;background:#fff;border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,0.18);padding:1.5rem;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;transform:translateY(120px);opacity:0;transition:all 0.4s ease">
-<button onclick="document.getElementById('capture-popup').style.display='none'" style="position:absolute;top:10px;right:12px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#9ca3af">×</button>
-<div style="font-size:1.4rem;margin-bottom:0.5rem">✨</div>
-<h4 style="font-size:1rem;font-weight:700;color:#111827;margin:0 0 0.25rem">Free Skincare Device Guide</h4>
-<p style="font-size:0.82rem;color:#6b7280;margin:0 0 1rem">5 devices ranked by clinical evidence. Honest, no-fluff guide — free.</p>
-<form action="https://formspree.io/f/xkovevqk" method="POST" onsubmit="localStorage.setItem('email-captured','1');document.getElementById('capture-popup').innerHTML='&lt;p style=text-align:center;padding:1rem;color:#059669;font-weight:600&gt;✅ Check your inbox!&lt;/p&gt;'">
-<input name="email" placeholder="Your email address" required="" style="width:100%;padding:0.6rem 0.75rem;border:1.5px solid #e5e7eb;border-radius:8px;font-size:0.9rem;margin-bottom:0.5rem;box-sizing:border-box" type="email"/>
-<input name="_subject" type="hidden" value="New AesteticAdvice subscriber"/>
-<button style="width:100%;background:#2563eb;color:#fff;border:none;padding:0.65rem;border-radius:8px;font-weight:700;font-size:0.9rem;cursor:pointer" type="submit">Get the Free Guide →</button>
-</form>
-<p style="font-size:0.72rem;color:#9ca3af;text-align:center;margin-top:0.5rem">No spam. Unsubscribe anytime.</p>
 </div>
-<script>
-  setTimeout(function(){
-    var w=document.getElementById('capture-popup');
-    if(w&&!localStorage.getItem('email-captured')){w.style.transform='translateY(0)';w.style.opacity='1';}
-  },30000);
-  window.addEventListener('scroll',function(){
-    var p=(window.scrollY/(document.body.scrollHeight-window.innerHeight))*100;
-    if(p>60){var w=document.getElementById('capture-popup');if(w&&!localStorage.getItem('email-captured')){w.style.transform='translateY(0)';w.style.opacity='1';}}
-  });
-</script>
-
-
-
 <footer class="site-footer">
   <div class="footer-main">
     <div class="footer-brand">
       <span class="footer-logo">AesteticAdvice</span>
       <p>Independent, evidence-based reviews of at-home aesthetic devices and skincare. No sponsored rankings — ever.</p>
     </div>
-    <div class="footer-col">
-      <h4>Skincare</h4>
-      <ul>
-        <li><a href="/skincare-serums/">Serums</a></li>
-        <li><a href="/sunscreen-spf/">SPF &amp; Sunscreen</a></li>
-        <li><a href="/retinol-anti-aging/">Retinol</a></li>
-        <li><a href="/collagen-supplements/">Collagen</a></li>
-        <li><a href="/face-tools-gua-sha/">Gua Sha</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Devices</h4>
-      <ul>
-        <li><a href="/at-home-laser-hair-removal/">IPL &amp; Laser</a></li>
-        <li><a href="/led-light-therapy-masks/">LED Masks</a></li>
-        <li><a href="/microneedling-devices/">Microneedling</a></li>
-        <li><a href="/hair-loss-treatments/">Hair Loss</a></li>
-        <li><a href="/teeth-whitening/">Teeth Whitening</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Guides</h4>
-      <ul>
-        <li><a href="/blog/">All Articles</a></li>
-        <li><a href="/best-at-home-aesthetic-devices/">Best Of 2026</a></li>
-        <li><a href="/compare/vitamin-c-vs-retinol/">Compare Products</a></li>
-        <li><a href="/resources/">Tools &amp; Resources</a></li>
-      </ul>
-    </div>
+    <div class="footer-col"><h4>Skincare</h4><ul>
+      <li><a href="/skincare-serums/">Serums</a></li>
+      <li><a href="/sunscreen-spf/">SPF &amp; Sunscreen</a></li>
+      <li><a href="/retinol-anti-aging/">Retinol</a></li>
+      <li><a href="/collagen-supplements/">Collagen</a></li>
+      <li><a href="/face-tools-gua-sha/">Gua Sha &amp; Tools</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Devices</h4><ul>
+      <li><a href="/at-home-laser-hair-removal/">IPL &amp; Laser</a></li>
+      <li><a href="/led-light-therapy-masks/">LED Masks</a></li>
+      <li><a href="/microneedling-devices/">Microneedling</a></li>
+      <li><a href="/hair-loss-treatments/">Hair Loss</a></li>
+      <li><a href="/teeth-whitening/">Teeth Whitening</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Guides</h4><ul>
+      <li><a href="/blog/">All Articles</a></li>
+      <li><a href="/best-at-home-aesthetic-devices/">Best Of 2026</a></li>
+      <li><a href="/compare/">Compare Products</a></li>
+      <li><a href="/resources/">Tools &amp; Resources</a></li>
+    </ul></div>
   </div>
   <div class="footer-bottom">
-    <div class="footer-bottom-inner">
-      <span>© 2026 AesteticAdvice. All rights reserved.</span>
-      <span>Content is for informational purposes only. Consult a dermatologist before starting any new treatment.</span>
-    </div>
+    <span>© 2026 AesteticAdvice. All rights reserved.</span>
+    <span>Content is for informational purposes only. Consult a dermatologist before starting any new treatment.</span>
   </div>
   <div class="footer-disclosure">
-    <strong>Affiliate Disclosure:</strong> AesteticAdvice participates in the Amazon Associates program. We earn commissions when you click our links and purchase — at no extra cost to you. Our editorial opinions are never influenced by affiliate relationships.
+    <strong>Affiliate Disclosure:</strong> AesteticAdvice participates in the Amazon Associates program. We earn commissions when you click our links — at no extra cost to you. Our editorial opinions are never influenced by affiliate relationships.
   </div>
 </footer>
-
-
-</body>
-</html>
+</body></html>
