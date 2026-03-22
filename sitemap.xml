@@ -294,4 +294,54 @@
   <!-- Batch 3: 2 new comparison pages -->
   <url><loc>https://aesteticadvice.com/compare/nuface-vs-ziip/</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aesteticadvice.com/compare/omnilux-vs-currentbody-led/</loc><lastmod>2026-03-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url>
+    <loc>https://aesteticadvice.com/blog/skin-cycling-routine/</loc>
+    <lastmod>2026-03-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aesteticadvice.com/blog/bakuchiol-vs-retinol/</loc>
+    <lastmod>2026-03-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aesteticadvice.com/blog/ceramides-skin-barrier/</loc>
+    <lastmod>2026-03-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aesteticadvice.com/blog/azelaic-acid-guide/</loc>
+    <lastmod>2026-03-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aesteticadvice.com/blog/snail-mucin-benefits/</loc>
+    <lastmod>2026-03-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aesteticadvice.com/blog/best-eye-cream-dark-circles/</loc>
+    <lastmod>2026-03-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aesteticadvice.com/blog/glycolic-acid-toner-guide/</loc>
+    <lastmod>2026-03-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aesteticadvice.com/blog/slugging-skincare-trend/</loc>
+    <lastmod>2026-03-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aesteticadvice.com/blog/double-cleansing-guide/</loc>
+    <lastmod>2026-03-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aesteticadvice.com/blog/best-moisturizer-dry-skin/</loc>
+    <lastmod>2026-03-22</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>
