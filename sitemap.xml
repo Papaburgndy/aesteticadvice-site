@@ -7,6 +7,7 @@
   </url>
   <url>
     <loc>https://aesteticadvice.com/at-home-laser-hair-removal/</loc>
+    <lastmod>2026-03-22</lastmod>
     <lastmod>2026-03-09</lastmod>
     <priority>0.8</priority>
   </url>
@@ -82,6 +83,7 @@
   </url>
   <url>
     <loc>https://aesteticadvice.com/hair-loss-treatments/</loc>
+    <lastmod>2026-03-22</lastmod>
     <lastmod>2026-03-09</lastmod>
     <priority>0.8</priority>
   </url>
@@ -270,7 +272,8 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-  <url><loc>https://aesteticadvice.com/skincare-serums/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aesteticadvice.com/compare/</loc><lastmod>2026-03-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://aesteticadvice.com/skincare-serums/</loc><lastmod>2026-03-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aesteticadvice.com/sunscreen-spf/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aesteticadvice.com/retinol-anti-aging/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aesteticadvice.com/compare/eltamd-vs-cerave-sunscreen/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
