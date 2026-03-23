@@ -3,9 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="geo.region" content="US">
+<meta name="geo.placename" content="United States">
+<meta name="ICBM" content="37.0902, -95.7129">
+<meta name="DC.language" content="en">
 <title>Dr. Dennis Gross SpectraLite Review - AesteticAdvice</title>
 <meta name="description" content="Honest reviews on aesthetic treatments & wellness products">
 <link rel="canonical" href="https://aesteticadvice.com/led-light-therapy-masks/dr-dennis-gross-spectralite-review/">
+<link rel="alternate" hreflang="en" href="https://aesteticadvice.com/led-light-therapy-masks/dr-dennis-gross-spectralite-review/">
+<link rel="alternate" hreflang="en-US" href="https://aesteticadvice.com/led-light-therapy-masks/dr-dennis-gross-spectralite-review/">
+<link rel="alternate" hreflang="en-GB" href="https://aesteticadvice.com/led-light-therapy-masks/dr-dennis-gross-spectralite-review/">
+<link rel="alternate" hreflang="en-AU" href="https://aesteticadvice.com/led-light-therapy-masks/dr-dennis-gross-spectralite-review/">
+<link rel="alternate" hreflang="en-CA" href="https://aesteticadvice.com/led-light-therapy-masks/dr-dennis-gross-spectralite-review/">
+<link rel="alternate" hreflang="en-IN" href="https://aesteticadvice.com/led-light-therapy-masks/dr-dennis-gross-spectralite-review/">
+<link rel="alternate" hreflang="x-default" href="https://aesteticadvice.com/led-light-therapy-masks/dr-dennis-gross-spectralite-review/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Dr. Dennis Gross SpectraLite Review - AesteticAdvice">
 <meta property="og:description" content="Honest reviews on aesthetic treatments & wellness products">
@@ -178,12 +189,16 @@ img{max-width:100%;height:auto;}
   .related-grid{grid-template-columns:1fr;}
   .footer-main{grid-template-columns:1fr;}
 }
+
+.geo-bar{display:none;background:linear-gradient(90deg,#0d9488,#0891b2);color:#fff;text-align:center;font-size:0.78rem;font-weight:600;padding:6px 1rem;letter-spacing:0.02em;}
+.geo-bar a{color:#fff;text-decoration:underline;}
 </style>
 
 </head>
 <body>
 
 
+<div class="geo-bar"><span class="geo-flag"></span>Prices shown for your local Amazon store. <a href="?country=US">Switch to US</a></div>
 <div class="top-bar">🔬 Evidence-Based Aesthetic Reviews · No Paid Rankings · <a href="/blog/">Read Our Guides →</a></div>
 <header class="site-header">
   <div class="nav-wrap">
@@ -371,5 +386,63 @@ img{max-width:100%;height:auto;}
 </footer>
 
 
+
+<!-- International Amazon Link Localization -->
+<script>
+(function(){
+  var defined = {
+    'GB': {d:'www.amazon.co.uk',  tag:'aesteticadv-21', cur:'£', flag:'🇬🇧'},
+    'CA': {d:'www.amazon.ca',     tag:'aesteticadv-20', cur:'CA$', flag:'🇨🇦'},
+    'AU': {d:'www.amazon.com.au', tag:'aesteticadv-20', cur:'A$', flag:'🇦🇺'},
+    'DE': {d:'www.amazon.de',     tag:'aesteticadv-20', cur:'€', flag:'🇩🇪'},
+    'IN': {d:'www.amazon.in',     tag:'aesteticadv-20', cur:'₹', flag:'🇮🇳'},
+    'FR': {d:'www.amazon.fr',     tag:'aesteticadv-20', cur:'€', flag:'🇫🇷'},
+    'ES': {d:'www.amazon.es',     tag:'aesteticadv-20', cur:'€', flag:'🇪🇸'},
+    'IT': {d:'www.amazon.it',     tag:'aesteticadv-20', cur:'€', flag:'🇮🇹'},
+    'JP': {d:'www.amazon.co.jp',  tag:'aesteticadv-20', cur:'¥', flag:'🇯🇵'}
+  };
+  var US = {d:'www.amazon.com', tag:'aesteticadv-20'};
+
+  function localize(cc){
+    var map = defined[cc];
+    if(!map) return;
+    var links = document.querySelectorAll('a[href*="amazon.com/dp/"]');
+    links.forEach(function(a){
+      var asin = a.href.match(/dp\/([A-Z0-9]{10})/);
+      if(asin){
+        a.href = 'https://' + map.d + '/dp/' + asin[1] + '?tag=' + map.tag;
+      }
+    });
+    // Show country banner
+    var bar = document.querySelector('.geo-bar');
+    if(bar) bar.style.display = 'block';
+    var flag = document.querySelector('.geo-flag');
+    if(flag) flag.textContent = map.flag + ' ';
+  }
+
+  // Detect country via timezone heuristic (no API call needed)
+  try {
+    var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var tzMap = {
+      'Europe/London':'GB','Europe/Dublin':'GB','Europe/Edinburgh':'GB',
+      'America/Toronto':'CA','America/Vancouver':'CA','America/Montreal':'CA',
+      'America/Edmonton':'CA','America/Winnipeg':'CA','America/Halifax':'CA',
+      'Australia/Sydney':'AU','Australia/Melbourne':'AU','Australia/Brisbane':'AU',
+      'Australia/Perth':'AU','Australia/Adelaide':'AU','Australia/Hobart':'AU',
+      'Europe/Berlin':'DE','Europe/Munich':'DE',
+      'Asia/Kolkata':'IN','Asia/Calcutta':'IN',
+      'Europe/Paris':'FR','Europe/Madrid':'ES','Europe/Rome':'IT',
+      'Asia/Tokyo':'JP'
+    };
+    var cc = tzMap[tz];
+    if(cc) localize(cc);
+  } catch(e){}
+
+  // Also allow manual override via URL param ?country=GB
+  var params = new URLSearchParams(window.location.search);
+  var manual = params.get('country');
+  if(manual && defined[manual.toUpperCase()]) localize(manual.toUpperCase());
+})();
+</script>
 </body>
 </html>

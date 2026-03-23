@@ -3,9 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="geo.region" content="US">
+<meta name="geo.placename" content="United States">
+<meta name="ICBM" content="37.0902, -95.7129">
+<meta name="DC.language" content="en">
 <title>How to Get Rid of Dark Spots on Your Face: A Dermatologist's Guide | AesteticAdvice</title>
 <meta name="description" content="The complete guide to fading hyperpigmentation, dark spots, and melasma — the ingredients that actually work, the products to use, and what to realistically expect.">
 <link rel="canonical" href="https://aesteticadvice.com/blog/how-to-get-rid-of-dark-spots/">
+<link rel="alternate" hreflang="en" href="https://aesteticadvice.com/blog/how-to-get-rid-of-dark-spots/">
+<link rel="alternate" hreflang="en-US" href="https://aesteticadvice.com/blog/how-to-get-rid-of-dark-spots/">
+<link rel="alternate" hreflang="en-GB" href="https://aesteticadvice.com/blog/how-to-get-rid-of-dark-spots/">
+<link rel="alternate" hreflang="en-AU" href="https://aesteticadvice.com/blog/how-to-get-rid-of-dark-spots/">
+<link rel="alternate" hreflang="en-CA" href="https://aesteticadvice.com/blog/how-to-get-rid-of-dark-spots/">
+<link rel="alternate" hreflang="en-IN" href="https://aesteticadvice.com/blog/how-to-get-rid-of-dark-spots/">
+<link rel="alternate" hreflang="x-default" href="https://aesteticadvice.com/blog/how-to-get-rid-of-dark-spots/">
 <meta property="og:type" content="article">
 <meta property="og:title" content="How to Get Rid of Dark Spots on Your Face: A Dermatologist's Guide">
 <meta property="og:description" content="The complete guide to fading hyperpigmentation, dark spots, and melasma — the ingredients that actually work, the products to use, and what to realistically expect.">
@@ -89,12 +100,16 @@ a{color:inherit;text-decoration:none;}
 .footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding:1rem 1.5rem;max-width:1200px;margin:0 auto;font-size:0.76rem;color:rgba(255,255,255,0.4);display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;}
 .footer-disc{background:rgba(0,0,0,0.2);padding:0.85rem 1.5rem;text-align:center;font-size:0.74rem;color:rgba(255,255,255,0.4);}
 @media(max-width:768px){.layout{grid-template-columns:1fr;}.sidebar{display:none;}.nav-links{display:none;}h1{font-size:1.7rem!important;}}
+
+.geo-bar{display:none;background:linear-gradient(90deg,#0d9488,#0891b2);color:#fff;text-align:center;font-size:0.78rem;font-weight:600;padding:6px 1rem;letter-spacing:0.02em;}
+.geo-bar a{color:#fff;text-decoration:underline;}
 </style>
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What fades dark spots fastest?", "acceptedAnswer": {"@type": "Answer", "text": "The fastest OTC approach: daily SPF 50 + vitamin C serum (AM) + azelaic acid or niacinamide (PM). For faster results, add prescription tretinoin. Fastest overall: a dermatologist-administered chemical peel or IPL treatment, which can produce results in 1–2 weeks that take 3–4 months with topicals alone."}}, {"@type": "Question", "name": "Does vitamin C or niacinamide work better for dark spots?", "acceptedAnswer": {"@type": "Answer", "text": "Both work but via different mechanisms. Vitamin C inhibits melanin production and reverses existing oxidized melanin; niacinamide prevents melanin transfer to skin cells. They complement each other — using both is more effective than either alone. There's no conflict between them at typical skincare concentrations."}}, {"@type": "Question", "name": "Can dark spots come back after treatment?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if you stop protecting your skin. Sun exposure, hormonal changes, and inflammation can re-trigger hyperpigmentation in areas that have previously been treated. SPF is the only way to prevent recurrence. For melasma especially, ongoing SPF and sometimes maintenance treatment are required indefinitely."}}]}</script>
 </head>
 <body>
 <div id="progress-bar"></div>
+<div class="geo-bar"><span class="geo-flag"></span>Prices shown for your local Amazon store. <a href="?country=US">Switch to US</a></div>
 <div class="top-bar">🔬 Evidence-Based Aesthetic Reviews · <a href="/blog/">Read Our Guides →</a></div>
 <header class="site-header">
   <div class="nav-wrap">
@@ -316,5 +331,63 @@ if(prodLinks.length===0){
     }
   });
 }
+</script>
+
+<!-- International Amazon Link Localization -->
+<script>
+(function(){
+  var defined = {
+    'GB': {d:'www.amazon.co.uk',  tag:'aesteticadv-21', cur:'£', flag:'🇬🇧'},
+    'CA': {d:'www.amazon.ca',     tag:'aesteticadv-20', cur:'CA$', flag:'🇨🇦'},
+    'AU': {d:'www.amazon.com.au', tag:'aesteticadv-20', cur:'A$', flag:'🇦🇺'},
+    'DE': {d:'www.amazon.de',     tag:'aesteticadv-20', cur:'€', flag:'🇩🇪'},
+    'IN': {d:'www.amazon.in',     tag:'aesteticadv-20', cur:'₹', flag:'🇮🇳'},
+    'FR': {d:'www.amazon.fr',     tag:'aesteticadv-20', cur:'€', flag:'🇫🇷'},
+    'ES': {d:'www.amazon.es',     tag:'aesteticadv-20', cur:'€', flag:'🇪🇸'},
+    'IT': {d:'www.amazon.it',     tag:'aesteticadv-20', cur:'€', flag:'🇮🇹'},
+    'JP': {d:'www.amazon.co.jp',  tag:'aesteticadv-20', cur:'¥', flag:'🇯🇵'}
+  };
+  var US = {d:'www.amazon.com', tag:'aesteticadv-20'};
+
+  function localize(cc){
+    var map = defined[cc];
+    if(!map) return;
+    var links = document.querySelectorAll('a[href*="amazon.com/dp/"]');
+    links.forEach(function(a){
+      var asin = a.href.match(/dp\/([A-Z0-9]{10})/);
+      if(asin){
+        a.href = 'https://' + map.d + '/dp/' + asin[1] + '?tag=' + map.tag;
+      }
+    });
+    // Show country banner
+    var bar = document.querySelector('.geo-bar');
+    if(bar) bar.style.display = 'block';
+    var flag = document.querySelector('.geo-flag');
+    if(flag) flag.textContent = map.flag + ' ';
+  }
+
+  // Detect country via timezone heuristic (no API call needed)
+  try {
+    var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var tzMap = {
+      'Europe/London':'GB','Europe/Dublin':'GB','Europe/Edinburgh':'GB',
+      'America/Toronto':'CA','America/Vancouver':'CA','America/Montreal':'CA',
+      'America/Edmonton':'CA','America/Winnipeg':'CA','America/Halifax':'CA',
+      'Australia/Sydney':'AU','Australia/Melbourne':'AU','Australia/Brisbane':'AU',
+      'Australia/Perth':'AU','Australia/Adelaide':'AU','Australia/Hobart':'AU',
+      'Europe/Berlin':'DE','Europe/Munich':'DE',
+      'Asia/Kolkata':'IN','Asia/Calcutta':'IN',
+      'Europe/Paris':'FR','Europe/Madrid':'ES','Europe/Rome':'IT',
+      'Asia/Tokyo':'JP'
+    };
+    var cc = tzMap[tz];
+    if(cc) localize(cc);
+  } catch(e){}
+
+  // Also allow manual override via URL param ?country=GB
+  var params = new URLSearchParams(window.location.search);
+  var manual = params.get('country');
+  if(manual && defined[manual.toUpperCase()]) localize(manual.toUpperCase());
+})();
 </script>
 </body></html>
