@@ -192,6 +192,38 @@ img{max-width:100%;height:auto;}
 
 .geo-bar{display:none;background:linear-gradient(90deg,#0d9488,#0891b2);color:#fff;text-align:center;font-size:0.78rem;font-weight:600;padding:6px 1rem;letter-spacing:0.02em;}
 .geo-bar a{color:#fff;text-decoration:underline;}
+
+/* ── EMAIL CAPTURE POPUP ── */
+.lead-popup-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:9999;align-items:center;justify-content:center;padding:1rem;backdrop-filter:blur(2px);}
+.lead-popup-overlay.active{display:flex;}
+.lead-popup{background:#fff;border-radius:16px;max-width:520px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,0.3);overflow:hidden;position:relative;animation:popIn 0.3s ease;}
+@keyframes popIn{from{transform:scale(0.9) translateY(20px);opacity:0}to{transform:scale(1) translateY(0);opacity:1}}
+.lead-popup-header{background:linear-gradient(135deg,#0d9488,#0891b2);padding:2rem 2rem 1.5rem;text-align:center;color:#fff;}
+.lead-popup-header h3{font-family:'Playfair Display',Georgia,serif;font-size:1.5rem;font-weight:900;margin-bottom:0.5rem;}
+.lead-popup-header p{font-size:0.92rem;opacity:0.9;line-height:1.5;}
+.lead-popup-body{padding:1.75rem 2rem 2rem;}
+.lead-popup-features{display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:1.25rem;justify-content:center;}
+.lead-popup-feat{font-size:0.78rem;color:#0f766e;font-weight:600;background:#ccfbf1;padding:4px 12px;border-radius:20px;}
+.lead-popup-form{display:flex;gap:0.5rem;flex-wrap:wrap;}
+.lead-popup-form input[type="email"]{flex:1;min-width:200px;padding:12px 16px;border:2px solid #e5e7eb;border-radius:8px;font-size:0.95rem;outline:none;transition:border-color 0.15s;font-family:inherit;}
+.lead-popup-form input[type="email"]:focus{border-color:#0d9488;}
+.lead-popup-form button{background:#0d9488;color:#fff;border:none;padding:12px 24px;border-radius:8px;font-weight:700;font-size:0.92rem;cursor:pointer;transition:background 0.15s;white-space:nowrap;font-family:inherit;}
+.lead-popup-form button:hover{background:#0f766e;}
+.lead-popup-fine{font-size:0.72rem;color:#9ca3af;text-align:center;margin-top:0.75rem;}
+.lead-popup-close{position:absolute;top:12px;right:14px;background:rgba(255,255,255,0.2);border:none;color:#fff;font-size:1.4rem;cursor:pointer;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;line-height:1;transition:background 0.15s;}
+.lead-popup-close:hover{background:rgba(255,255,255,0.35);}
+.lead-popup-success{display:none;text-align:center;padding:2.5rem 2rem;}
+.lead-popup-success h3{font-family:'Playfair Display',Georgia,serif;color:#111827;font-size:1.4rem;margin-bottom:0.75rem;}
+.lead-popup-success p{color:#6b7280;font-size:0.92rem;margin-bottom:1.25rem;line-height:1.6;}
+.lead-popup-success a{display:inline-block;background:#0d9488;color:#fff;padding:12px 28px;border-radius:8px;font-weight:700;text-decoration:none;transition:background 0.15s;}
+.lead-popup-success a:hover{background:#0f766e;}
+/* ── INLINE BLOG CTA ── */
+.lead-inline-cta{background:linear-gradient(135deg,#f0fdfa,#ccfbf1);border:2px solid #0d9488;border-radius:12px;padding:1.5rem 1.75rem;margin:2rem 0;text-align:center;}
+.lead-inline-cta h4{font-family:'Playfair Display',Georgia,serif;font-size:1.15rem;font-weight:900;color:#111827;margin-bottom:0.4rem;}
+.lead-inline-cta p{font-size:0.88rem;color:#6b7280;margin-bottom:1rem;}
+.lead-inline-cta .inline-cta-btn{display:inline-block;background:#0d9488;color:#fff;padding:10px 22px;border-radius:8px;font-weight:700;font-size:0.88rem;text-decoration:none;transition:background 0.15s;}
+.lead-inline-cta .inline-cta-btn:hover{background:#0f766e;}
+@media(max-width:640px){.lead-popup{margin:0.5rem;}.lead-popup-header{padding:1.5rem 1.25rem 1rem;}.lead-popup-header h3{font-size:1.25rem;}.lead-popup-body{padding:1.25rem;}.lead-popup-form{flex-direction:column;}.lead-popup-form button{width:100%;}}
 </style>
 
 </head>
@@ -443,6 +475,120 @@ img{max-width:100%;height:auto;}
   var params = new URLSearchParams(window.location.search);
   var manual = params.get('country');
   if(manual && defined[manual.toUpperCase()]) localize(manual.toUpperCase());
+})();
+</script>
+
+<!-- EMAIL LEAD MAGNET POPUP -->
+<div class="lead-popup-overlay" id="leadPopup">
+  <div class="lead-popup">
+    <button class="lead-popup-close" id="leadPopupClose" aria-label="Close">&times;</button>
+    <div id="leadPopupForm">
+      <div class="lead-popup-header">
+        <h3>Free Skincare Routine Cheat Sheet</h3>
+        <p>Get our 6-page guide with morning &amp; evening routines, ingredient compatibility charts, and device schedules.</p>
+      </div>
+      <div class="lead-popup-body">
+        <div class="lead-popup-features">
+          <span class="lead-popup-feat">AM &amp; PM Routines</span>
+          <span class="lead-popup-feat">Ingredient Chart</span>
+          <span class="lead-popup-feat">Device Schedule</span>
+          <span class="lead-popup-feat">Retinol Ladder</span>
+        </div>
+        <form class="lead-popup-form" id="leadForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="email" name="email" placeholder="Enter your email address" required aria-label="Email address">
+          <button type="submit">Get Free Guide</button>
+        </form>
+        <p class="lead-popup-fine">No spam, ever. Unsubscribe anytime. We respect your privacy.</p>
+      </div>
+    </div>
+    <div class="lead-popup-success" id="leadPopupSuccess">
+      <h3>Check Your Inbox!</h3>
+      <p>Your free Skincare Routine Cheat Sheet is on its way. While you wait, grab your copy directly:</p>
+      <a href="/skincare-routine-cheat-sheet.pdf" download>Download PDF Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Lead Magnet Popup Script -->
+<script>
+(function(){
+  var popup = document.getElementById('leadPopup');
+  var closeBtn = document.getElementById('leadPopupClose');
+  var form = document.getElementById('leadForm');
+  var formView = document.getElementById('leadPopupForm');
+  var successView = document.getElementById('leadPopupSuccess');
+  if(!popup) return;
+
+  // Check if already shown/dismissed
+  var dismissed = false;
+  try { dismissed = localStorage.getItem('leadPopupDismissed') === '1'; } catch(e){}
+
+  function showPopup(){
+    if(dismissed) return;
+    popup.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+  function hidePopup(){
+    popup.classList.remove('active');
+    document.body.style.overflow = '';
+    try { localStorage.setItem('leadPopupDismissed', '1'); } catch(e){}
+    dismissed = true;
+  }
+
+  // Exit-intent trigger (desktop: mouse leaves viewport top)
+  var triggered = false;
+  document.addEventListener('mouseout', function(e){
+    if(triggered || dismissed) return;
+    if(e.clientY < 5 && e.relatedTarget === null){
+      triggered = true;
+      showPopup();
+    }
+  });
+
+  // Scroll trigger (mobile: show after 60% scroll)
+  var scrollTriggered = false;
+  window.addEventListener('scroll', function(){
+    if(scrollTriggered || dismissed) return;
+    var scrollPct = (window.scrollY + window.innerHeight) / document.body.scrollHeight;
+    if(scrollPct > 0.6){
+      scrollTriggered = true;
+      setTimeout(showPopup, 1500);
+    }
+  });
+
+  // Time trigger: show after 45 seconds as fallback
+  setTimeout(function(){
+    if(!triggered && !scrollTriggered && !dismissed) showPopup();
+  }, 45000);
+
+  // Close handlers
+  closeBtn.addEventListener('click', hidePopup);
+  popup.addEventListener('click', function(e){
+    if(e.target === popup) hidePopup();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') hidePopup();
+  });
+
+  // Form submission
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var email = form.querySelector('input[type="email"]').value;
+    // Send to Formspree (or replace with your email service)
+    fetch(form.action, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+      body: JSON.stringify({email: email, source: window.location.pathname})
+    }).then(function(r){
+      formView.style.display = 'none';
+      successView.style.display = 'block';
+      try { localStorage.setItem('leadPopupDismissed', '1'); } catch(ex){}
+    }).catch(function(){
+      // Fallback: direct download even if form fails
+      formView.style.display = 'none';
+      successView.style.display = 'block';
+    });
+  });
 })();
 </script>
 </body>
