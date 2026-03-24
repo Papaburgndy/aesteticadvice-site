@@ -3,6 +3,7 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://aesteticadvice.com/sitemap.xml
+Sitemap: https://aesteticadvice.com/image-sitemap.xml
 
 # Pinterest
 User-agent: Pinterestbot
