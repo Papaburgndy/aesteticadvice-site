@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Beleza e Skincare - Dicas, Guias e Tendências</title>
+  <meta name="description" content="Leia os últimos artigos e guias sobre skincare, anti-envelhecimento, depilação a laser e cuidados com a beleza. Dicas de especialistas traduzidas ao português.">
+  <link rel="canonical" href="https://aesteticadvice.com/pt/blog/">
+
+  <link rel="alternate" hreflang="en" href="https://aesteticadvice.com/blog/">
+  <link rel="alternate" hreflang="es" href="https://aesteticadvice.com/es/blog/">
+  <link rel="alternate" hreflang="pt" href="https://aesteticadvice.com/pt/blog/">
+  <link rel="alternate" hreflang="fr" href="https://aesteticadvice.com/fr/blog/">
+  <link rel="alternate" hreflang="de" href="https://aesteticadvice.com/de/blog/">
+  <link rel="alternate" hreflang="it" href="https://aesteticadvice.com/it/blog/">
+  <link rel="alternate" hreflang="ja" href="https://aesteticadvice.com/ja/blog/">
+  <link rel="alternate" hreflang="x-default" href="https://aesteticadvice.com/blog/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog de Beleza e Skincare - Dicas, Guias e Tendências">
+  <meta property="og:description" content="Leia os últimos artigos sobre skincare, anti-envelhecimento, depilação a laser e cuidados com a beleza.">
+  <meta property="og:url" content="https://aesteticadvice.com/pt/blog/">
+  <meta property="og:image" content="https://aesteticadvice.com/og-image.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog de Beleza e Skincare - Dicas e Guias">
+  <meta name="twitter:description" content="Dicas de especialistas em skincare, anti-envelhecimento e beleza traduzidas ao português.">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HWBRVBXZT4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HWBRVBXZT4');
+  </script>
+
+  <meta name="pinterest-site-verification" content="6b7f304ca159d2594c9bb4bc2d692b9b">
+
+  <style>
+    :root {
+      --brand: #0d9488;
+      --brand-dark: #0f766e;
+      --brand-light: #ccfbf1;
+      --navy: #111827;
+      --body: #374151;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --bg-soft: #f9fafb;
+      --amazon: #f59e0b;
+      --amazon-dark: #d97706;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --radius: 12px;
+      --shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--sans); color: var(--body); line-height: 1.6; }
+
+    header {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow);
+    }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--brand);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--body);
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--brand); }
+
+    .hero {
+      background: linear-gradient(135deg, var(--brand-light) 0%, white 100%);
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .breadcrumb {
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .breadcrumb a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .content { padding: 3rem 0; }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .article-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .article-card:hover { box-shadow: var(--shadow); }
+
+    .article-image {
+      background: linear-gradient(135deg, var(--brand-light), var(--brand));
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2.5rem;
+    }
+
+    .article-info {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .article-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .article-info h3 {
+      font-family: var(--serif);
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+      flex: 1;
+    }
+
+    .article-excerpt {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      flex: 1;
+    }
+
+    .read-more {
+      display: inline-block;
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .read-more:hover { color: var(--brand-dark); }
+
+    footer {
+      background: var(--navy);
+      color: white;
+      padding: 3rem 0;
+      margin-top: 4rem;
+    }
+
+    footer a { color: var(--brand-light); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    .footer-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-section h4 { margin-bottom: 1rem; }
+    .footer-section ul { list-style: none; }
+    .footer-section li { margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">AesteticAdvice</div>
+        <ul class="nav-links">
+          <li><a href="/pt/skincare-serums/">Skincare</a></li>
+          <li><a href="/pt/">Dispositivos</a></li>
+          <li><a href="/pt/">Queda Capilar</a></li>
+          <li><a href="/pt/">Melhores</a></li>
+          <li><a href="/pt/blog/">Blog</a></li>
+          <li><a href="/pt/#newsletter">Boletim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="/pt/">Início</a> / Blog
+      </div>
+      <h1>Blog de Beleza e Skincare</h1>
+      <p>Descubra os últimos artigos, guias completos e tendências em skincare, anti-envelhecimento e cuidados de beleza.</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container">
+      <div class="article-grid">
+        <article class="article-card">
+          <div class="article-image">📚</div>
+          <div class="article-info">
+            <div class="article-meta">Publicado em 15 de março de 2024</div>
+            <h3>Guia Completo de Rotina de Skincare em 10 Passos</h3>
+            <p class="article-excerpt">Aprenda a ordem correta de aplicação de produtos, desde limpeza até protetor solar, e descubra como montar uma rotina que funciona para seu tipo de pele.</p>
+            <a href="/" class="read-more">Leia o artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image">💪</div>
+          <div class="article-info">
+            <div class="article-meta">Publicado em 10 de março de 2024</div>
+            <h3>Retinol vs Tretinoína: Qual é Melhor para Você?</h3>
+            <p class="article-excerpt">Entenda as diferenças entre retinol de venda livre, retinaldeído e tretinoína prescrита. Comparação de eficácia, efeitos colaterais e qual escolher.</p>
+            <a href="/" class="read-more">Leia o artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image">🧴</div>
+          <div class="article-info">
+            <div class="article-meta">Publicado em 5 de março de 2024</div>
+            <h3>Ingredientes de Skincare que Realmente Funcionam: Guia Científico</h3>
+            <p class="article-excerpt">Análise detalhada dos ingredientes mais comprovados cientificamente, incluindo niacinamida, ácido hialurônico, vitamina C e muito mais.</p>
+            <a href="/" class="read-more">Leia o artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image">✨</div>
+          <div class="article-info">
+            <div class="article-meta">Publicado em 28 de fevereiro de 2024</div>
+            <h3>Cuidados com a Pele Após Depilação a Laser: Guia Completo</h3>
+            <p class="article-excerpt">Descubra como cuidar adequadamente de sua pele após sessões de laser ou IPL para maximizar resultados e minimizar efeitos colaterais.</p>
+            <a href="/" class="read-more">Leia o artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image">🌿</div>
+          <div class="article-info">
+            <div class="article-meta">Publicado em 22 de fevereiro de 2024</div>
+            <h3>Skincare Natural vs Ingredientes Sintéticos: O Que Realmente Importa</h3>
+            <p class="article-excerpt">Desmitifique o debate entre natural e sintético. Descubra quais ingredientes "naturais" realmente funcionam e quais são apenas marketing.</p>
+            <a href="/" class="read-more">Leia o artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image">👨‍⚕️</div>
+          <div class="article-info">
+            <div class="article-meta">Publicado em 15 de fevereiro de 2024</div>
+            <h3>Como Escolher o Dermatologista Certo para Seus Problemas de Pele</h3>
+            <p class="article-excerpt">Guia prático para encontrar um dermatologista qualificado, fazer as perguntas certas e obter o melhor atendimento para sua pele.</p>
+            <a href="/" class="read-more">Leia o artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image">🛡️</div>
+          <div class="article-info">
+            <div class="article-meta">Publicado em 8 de fevereiro de 2024</div>
+            <h3>Protetor Solar: Mitos, Verdades e Como Usar Corretamente</h3>
+            <p class="article-excerpt">Tudo o que você precisa saber sobre protetor solar: tipos de FPS, ingredientes ativos, reaplicação e proteção contra luz azul.</p>
+            <a href="/" class="read-more">Leia o artigo →</a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image">💧</div>
+          <div class="article-info">
+            <div class="article-meta">Publicado em 1 de fevereiro de 2024</div>
+            <h3>Ácido Hialurônico: Como Esse Ingrediente Transforma a Sua Pele</h3>
+            <p class="article-excerpt">Aprenda como o ácido hialurônico funciona, por que é tão eficaz para hidratação e como escolher produtos com a concentração correta.</p>
+            <a href="/" class="read-more">Leia o artigo →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <div class="footer-section">
+          <h4>Explorar</h4>
+          <ul>
+            <li><a href="/pt/skincare-serums/">Séruns</a></li>
+            <li><a href="/pt/retinol-anti-aging/">Retinol</a></li>
+            <li><a href="/pt/at-home-laser-hair-removal/">Laser Caseiro</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="/pt/blog/">Blog</a></li>
+            <li><a href="/pt/#newsletter">Newsletter</a></li>
+            <li><a href="/pt/">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Idiomas</h4>
+          <ul>
+            <li><a href="/blog/">English</a></li>
+            <li><a href="/es/blog/">Español</a></li>
+            <li><a href="/pt/blog/">Português</a></li>
+            <li><a href="/fr/blog/">Français</a></li>
+          </ul>
+        </div>
+      </div>
+      <p style="text-align: center; color: #9ca3af;">© 2024 AesteticAdvice. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Início",
+        "item": "https://aesteticadvice.com/pt/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://aesteticadvice.com/pt/blog/"
+      }
+    ]
+  }
+  </script>
+</body>
+</html>
